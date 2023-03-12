@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ContoCorrente/1.0.0": {
+        "runtime": {
+          "ContoCorrente.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ContoCorrente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\bin\Debug\net7.0\ContoCorrente.exe
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\bin\Debug\net7.0\ContoCorrente.deps.json
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\bin\Debug\net7.0\ContoCorrente.runtimeconfig.json
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\bin\Debug\net7.0\ContoCorrente.dll
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\bin\Debug\net7.0\ContoCorrente.pdb
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.AssemblyInfo.cs
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.dll
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\refint\ContoCorrente.dll
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.pdb
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ContoCorrente.genruntimeconfig.cache
+D:\SVILUPPO .NET\Week1Exercise\ContoCorrente\obj\Debug\net7.0\ref\ContoCorrente.dll

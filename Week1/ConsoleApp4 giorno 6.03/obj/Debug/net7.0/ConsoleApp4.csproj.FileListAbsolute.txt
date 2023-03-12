@@ -1,0 +1,15 @@
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\bin\Debug\net7.0\ConsoleApp4.exe
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\bin\Debug\net7.0\ConsoleApp4.deps.json
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\bin\Debug\net7.0\ConsoleApp4.runtimeconfig.json
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\bin\Debug\net7.0\ConsoleApp4.dll
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\bin\Debug\net7.0\ConsoleApp4.pdb
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.AssemblyInfo.cs
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.dll
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\refint\ConsoleApp4.dll
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.pdb
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ConsoleApp4.genruntimeconfig.cache
+D:\SVILUPPO .NET\Week1Exercise\ConsoleApp4\obj\Debug\net7.0\ref\ConsoleApp4.dll

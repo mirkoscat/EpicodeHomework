@@ -1,0 +1,15 @@
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\bin\Debug\net7.0\Contribuente giorno 10.3.exe
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\bin\Debug\net7.0\Contribuente giorno 10.3.deps.json
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\bin\Debug\net7.0\Contribuente giorno 10.3.runtimeconfig.json
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\bin\Debug\net7.0\Contribuente giorno 10.3.dll
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\bin\Debug\net7.0\Contribuente giorno 10.3.pdb
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.AssemblyInfo.cs
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.dll
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\refint\Contribuente giorno 10.3.dll
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.pdb
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\Contribuente giorno 10.3.genruntimeconfig.cache
+D:\SVILUPPO .NET\Week1Exercise\Contribuente giorno 10.3\obj\Debug\net7.0\ref\Contribuente giorno 10.3.dll
