@@ -106,24 +106,7 @@ IMPOSTA DA VERSARE: € 4.219,50
             Console.WriteLine($"IMPOSTA DA VERSARE: € {imp}");
             Console.WriteLine("==================================================");
         }
-        //case 2 stampa
-        public void Stampa(Contribuente c)
-        {
-            //calcolo l'imposta e riprendo il valore
-            double imp = c.CalcolaImposta();
-            Console.WriteLine("==================================================");
-            Console.WriteLine("CALCOLO DELL'IMPOSTA DA VERSARE:");
-            Console.WriteLine();
-            Console.WriteLine($"Contribuente: {c.Nome} {c.Cognome},");
-            Console.WriteLine($"nato il {c.DataDiNascita} ({c.Sesso}),");
-            Console.WriteLine($"residente in {c.ComuneResidenza},");
-            Console.WriteLine($"codice fiscale: {c.CodiceFiscale}");
-            Console.WriteLine();
-            Console.WriteLine($"Reddito dichiarato: € {c.RedditoAnnuale}");
-            Console.WriteLine();
-            Console.WriteLine($"IMPOSTA DA VERSARE: € {imp}");
-            Console.WriteLine("==================================================");
-        }
+       
         public DateTime chiediData() 
         {
             int g, m, a;
@@ -203,7 +186,7 @@ IMPOSTA DA VERSARE: € 4.219,50
                         c1.chiediDatiEStampa(c1);
                         break;
                     case 2:
-                        c2.Stampa(c2);
+                        c2.Stampa(c2, case2Data);
                         break;
                  
                     case 0:
