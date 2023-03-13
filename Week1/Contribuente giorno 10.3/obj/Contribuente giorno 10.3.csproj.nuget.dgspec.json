@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SVILUPPO .NET\\Week1Exercise\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj": {}
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj": {}
   },
   "projects": {
-    "D:\\SVILUPPO .NET\\Week1Exercise\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SVILUPPO .NET\\Week1Exercise\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj",
         "projectName": "Contribuente giorno 10.3",
-        "projectPath": "D:\\SVILUPPO .NET\\Week1Exercise\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Contribuente giorno 10.3\\Contribuente giorno 10.3.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "D:\\SVILUPPO .NET\\Week1Exercise\\Contribuente giorno 10.3\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Contribuente giorno 10.3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
