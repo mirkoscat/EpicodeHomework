@@ -1,0 +1,91 @@
+html {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: aqua;
+    border-bottom: 3px solid #AA77FF;
+}
+
+header p {
+    color: blue
+}
+
+main {
+    border-left: 1px solid black;
+    border-bottom: 1px dotted black;
+
+}
+
+
+section {
+    width: 100vw;
+    margin: auto;
+    padding-left: 20px;
+
+
+}
+
+section div h1 {font-size: 20px;
+    text-align: center;
+}
+
+section div h1.subtitle {
+    text-align: left;
+}
+
+section[title="formazione"],
+section[title="competenze"] {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: serif;
+}
+
+.title {
+    text-align: center;
+    font-family: serif;
+
+}
+
+.blue {
+    color: blue;
+}
+
+.cit {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: end;
+    margin-right: 10%;
+}
+
+.separatore {
+    border-bottom: 1px dotted black;
+}
+
+
+
+/*usare la pseudoclasse per gestire i colori dei div*/
+section[title="competenze"] > div:nth-child(2){background-color: #97DEFF;}
+section[title="competenze"] > div:nth-child(3){background-color: #62CDFF;}
+section[title="competenze"] > div:nth-child(3):hover{background-color: black; color:white;}
+
+footer {
+    border-top: 5px solid aqua;
+    background-color: #AA77FF;
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+
+p[title="trattamento dati"] {
+    font-family: monospace;
+}
+
+
+
+
+
+
+

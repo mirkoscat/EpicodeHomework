@@ -1,0 +1,1 @@
+Viene richiesto di crear,  per quanto possibile, ogni dettaglio (spazi, colori, grandezze, allineamenti) presente nel semplice modello grafico "layout-grafico.png"
