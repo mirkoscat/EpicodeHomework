@@ -1,0 +1,169 @@
+body {
+    width: 80vw;
+    padding: auto;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+}
+
+header {
+    background-color: white;
+}
+
+header p:first-of-type {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+header nav {
+    background-color: #333;
+}
+
+header nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: yellow;
+}
+.logo {
+    text-align: center;
+}
+.titolo{padding-top: 30px;}
+
+.sfondo {
+    background: url("./assets/images/bg-carta.png") repeat-y -200px 0;
+    /* background-image: url("./assets/images/bg-carta.png");
+    background-position: left;
+    background-repeat: repeat-y;
+    background-origin: content-box;*/
+    
+}
+
+
+
+article h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+article[title="firstpost"] p:first-of-type,
+article[title="novita"] p:first-of-type {
+    text-indent: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+article p:first-of-type span {
+    color: slategray;
+}
+
+article a {
+    color: #c10019;
+}
+
+/* ### Tabelle ### */
+ table {
+    background-color: #34495E;
+    color: #fff;
+    border-radius: 5%;
+    margin: 1em 0;
+    min-width: 350px;
+}
+
+ thead {
+    color: #dd5;
+}
+
+ th,
+ td {
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* ### Form ### */
+ fieldset {
+    background-color: rgb(177, 206, 203);
+    border: none;
+    padding: 15px;
+}
+
+ input,
+ button {
+    padding: 5px 10px;
+}
+
+ input {
+    width: 350px;
+}
+
+ button {
+    background-color: #34495E;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section[title="correlati"] {
+    padding: 0.5em;
+}
+
+section[title="correlati"] > div {
+    
+    border: 1px solid #a3a3a3;
+    padding:  0.5em;
+    box-shadow: 0 0 3px #333333;
+    background-color: rgb(229, 238, 250);
+    margin-bottom: 10px;
+}
+
+section[title="correlati"] >div p {
+    margin: 0 0 10px;
+
+}
+
+section[title="correlati"] div p:last-child {
+    font-size: 0.9rem;
+}
+
+section[title="correlati"]>div p:first-of-type {
+
+    font-size: 1rem;
+    font-weight: bold;
+    margin:0;
+
+
+}
+
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px;
+}
+
+ address {
+    font-style: monospace;
+}
+
+footer a {
+    color: #f0f0f0;
+}
