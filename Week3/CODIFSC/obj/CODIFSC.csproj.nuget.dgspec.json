@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CODING\\CODIFSC\\CODIFSC.csproj": {}
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week3\\CODIFSC\\CODIFSC.csproj": {}
   },
   "projects": {
-    "D:\\CODING\\CODIFSC\\CODIFSC.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week3\\CODIFSC\\CODIFSC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CODING\\CODIFSC\\CODIFSC.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week3\\CODIFSC\\CODIFSC.csproj",
         "projectName": "CODIFSC",
-        "projectPath": "D:\\CODING\\CODIFSC\\CODIFSC.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week3\\CODIFSC\\CODIFSC.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "D:\\CODING\\CODIFSC\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week3\\CODIFSC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,18 +4,20 @@
     {
         public class Persona
         { 
-            public string consonanti = "";
             public static string Nome { get; set; }
             public static string Cognome { get; set; }
             public static string CharControllo { get; set; }
             public static string Comune { get; set; }
+            public static string GiornoNascita { get; set; }
+            public static string MeseNascita { get; set; }
+            public static string AnnoNascita { get; set; }
 
 
             public Persona() { }
 
             public string calcolaNomeCognome(string n)
             {
-                consonanti = "";
+                string consonanti = "";
                 foreach (char c in n)
                 {
                     if (c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U' && c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
@@ -72,7 +74,7 @@
             }
 
             public string calcolaComune(string c)
-            {// Calcolo del codice del comune
+            {
                 string codiceComune = "";
                 switch (c)
                 {
@@ -108,31 +110,35 @@
                     carattereControllo = "1";
                 return carattereControllo;
             }
-            public void stampaCodFisc(string c, string n, string an, string mn, string gn, string s, string charcontr)
+            public void stampaCodFisc(string c, string n, string an, string mn, string gn, string cmn, string cr)
             {
-                Console.WriteLine($"Il tuo codice fiscale è {c}{n}{an}{mn}{gn}{s}{charcontr}");
+                Console.WriteLine($"Il tuo codice fiscale è {c}{n}{an}{mn}{gn}{cmn}{cr}");
 
             }
             static void Main(string[] args)
             {
                 Persona p1 = new Persona();
                 
-                string Nome = p1.calcolaNomeCognome("mirko").Substring(0, 3).ToUpper();
-                string Cognome = p1.calcolaNomeCognome("scata").Substring(0, 3).ToUpper();
+                Nome = p1.calcolaNomeCognome("Mirko").Substring(0, 3).ToUpper();
+                Cognome = p1.calcolaNomeCognome("Scatà").Substring(0, 3).ToUpper();
 
-                string giornoNascita = "15"; 
-                string meseNascita = "05"; 
-                string annoNascita = "1992";
+                GiornoNascita = "15";
+                MeseNascita = "05";
+                AnnoNascita = "1992";
 
-                string anno = annoNascita.Substring(2);
-                string meseNascitaLettera = p1.calcolaMeseNascita(meseNascita);
+                string anno = AnnoNascita.Substring(2);
 
-                string Comune = p1.calcolaComune("Acireale");
+                string meseNascitaLettera = p1.calcolaMeseNascita(MeseNascita);
 
-                string CharControllo = p1.calcolaCarattereDiControllo("M");
+                Comune = p1.calcolaComune("Acireale");
 
-                p1.stampaCodFisc(Cognome, Nome, anno, meseNascitaLettera, giornoNascita, Comune, CharControllo);
-             }
+                CharControllo = p1.calcolaCarattereDiControllo("M");
+
+                p1.stampaCodFisc(Cognome, Nome, anno, meseNascitaLettera, GiornoNascita, Comune, CharControllo);
+
+               
+
+            }
         }
     }
 }
