@@ -1,0 +1,10 @@
+body, hmtl {
+    padding: 0;
+    margin: 0 auto;
+    background-color:grey;
+    font:12px Arial;
+}
+
+img, footer {
+display:none;
+}

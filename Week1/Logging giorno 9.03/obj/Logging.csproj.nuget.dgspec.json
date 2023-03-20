@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SVILUPPO .NET\\Week1Exercise\\Logging giorno 9.03\\Logging.csproj": {}
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Logging giorno 9.03\\Logging.csproj": {}
   },
   "projects": {
-    "D:\\SVILUPPO .NET\\Week1Exercise\\Logging giorno 9.03\\Logging.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Logging giorno 9.03\\Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SVILUPPO .NET\\Week1Exercise\\Logging giorno 9.03\\Logging.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Logging giorno 9.03\\Logging.csproj",
         "projectName": "Logging",
-        "projectPath": "D:\\SVILUPPO .NET\\Week1Exercise\\Logging giorno 9.03\\Logging.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Logging giorno 9.03\\Logging.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "D:\\SVILUPPO .NET\\Week1Exercise\\Logging giorno 9.03\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week1\\Logging giorno 9.03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

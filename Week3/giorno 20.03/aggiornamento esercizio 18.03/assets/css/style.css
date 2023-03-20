@@ -1,0 +1,275 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    background: white;
+    margin: 0;
+
+}
+
+h3,
+.banner h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: grey;
+}
+
+/* classi generiche. uso flex-center in ogni sezione
+ per centrare il contenuto in tutti i dispositivi*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.mx {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ml2 {
+    margin-left: 20px;
+}
+
+.mabot {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.mb {
+    margin-bottom: 2em;
+}
+
+.mt {
+    margin-top: 2em;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* Header */
+.logoimg {
+    width: 150px;
+    height: 50px;
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* Banner */
+
+.banner {
+    padding: 4em 2em 2em 2em;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2em;
+    color: #25a2c3;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+.banner p {
+    font-size: 1em;
+    margin-bottom: 1.75em;
+}
+
+.banner .button {
+    font-size: .9em;
+    background-color: #f04c2f;
+    border-radius: 4px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    height: 3.5em;
+    line-height: 3.5em;
+    padding: 0 3.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+
+
+/* gestione immagini */
+
+.imgdim img {
+    width: 80%;
+    border-radius: 100%;
+
+}
+
+.imgdim {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.radius {
+    border-radius: 10px 10px 0 0;
+}
+
+/*  sezione 2 */
+.sectwo {
+    background-color: #f04c2f;
+    color: white;
+}
+
+.blockquote {
+    font-style: italic;
+    margin: 0 0 2em 0;
+
+}
+
+.cit {
+    margin-top: 3px;
+    color: white;
+    font-size: 0.75em;
+}
+
+/*  sezione 3 */
+.bordo {
+    border: 2px solid lightgray;
+    box-sizing: content-box;
+
+}
+
+
+
+
+/* Footer */
+
+
+footer {
+    padding: 2em 0 0.1em 0;
+
+    background: #25a2c3;
+    text-align: center;
+    color: #c8e7f0;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+footer .icon {
+    color: #e22d0e;
+}
+
+footer a,
+footer p {
+    color: #c8e7f0;
+    text-decoration: none;
+}
+
+footer ul li {
+    padding: 0 2em;
+    font-size: .9em;
+}
+
+.copyright {
+
+    color: #a7d9e7;
+    font-size: 0.75em;
+    padding: 0;
+    padding: 2em 0;
+    text-align: center;
+    padding: 2em 10em;
+}
+.bordofooter{border-top: 1px solid rgba(255, 255, 255, 0.25);}
+/* Funzionamento Icone */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: block;
+    padding: 0 1em 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0;
+}
+
+ul.icons li .icon:before {
+    font-size: 2em;
+}
+
+ul.icons {
+    margin: 0 0 2em 0;
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li>* {
+    width: 100%;
+}
+
+@media (min-width:1025px) {
+    /* adattamento dimensioni immagini in caso di dispositivo Desktop */
+
+    .imgdim {
+        width: 100%;
+    }
+
+    .w70 {
+        width: 50%;
+    }
+
+    .w100 {
+        width: 100%;
+    }
+
+    .pl {
+        padding-left: 150px;
+    }
+}

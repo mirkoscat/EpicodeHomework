@@ -1,0 +1,44 @@
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+h1,
+h2,
+.card-title,
+div.container>a {
+    font-family: 'Merriweather', serif;
+}
+
+.banner {
+    height: 250px;
+    background-color: blue;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 15%;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+li.nav-item a {
+    color: white;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    height: 100px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.h80 {
+    height: 80px;
+}

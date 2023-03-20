@@ -118,8 +118,8 @@
             static void Main(string[] args)
             {
                 Persona p1 = new Persona();
-                
-                Nome = p1.calcolaNomeCognome("Mirko").Substring(0, 3).ToUpper();
+
+                Persona.Nome = p1.calcolaNomeCognome("Mirko").Substring(0, 3).ToUpper();
                 Cognome = p1.calcolaNomeCognome("Scatà").Substring(0, 3).ToUpper();
 
                 GiornoNascita = "15";

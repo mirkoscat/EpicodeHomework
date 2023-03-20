@@ -1,0 +1,2 @@
+Basandosi 2 layout grafici "layout-desktop.png" e "layout-mobile.png" bisognerà ricostruire il markup applicando le proprietà del framework Bootstrap. Ci si potrà aiutare consultando la guida sul sito Bootstrap, andando a prelevare i frammenti di codice (e le relative classi) propri di ogni elemento.
+In presenza di parti ancora non affrontate (es: librerie javascript/jquery), limitarsi a copiare/incollare come indicato nei primi passi di configurazione di Bootstrap
