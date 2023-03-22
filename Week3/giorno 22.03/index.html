@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Calcolatrice</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="calcolatrice">
+
+      <input id="area" class="area" name="area" value="" placeholder="0">
+      <table id="calc">
+        <tr>
+          <td><input value="C" onclick="reset()"></td>
+          <td><input value="<" onclick="cancella()"></td>
+          <td><input value="<" onclick="cancella()"></td>
+          <td><input value="/" onclick="dig('/')"></td>
+          <td><input value="x" onclick="dig('*')"></td>
+        </tr>
+        <tr>
+          <td><input value="7" onclick="dig(7)"></td>
+          <td><input value="8" onclick="dig(8)"></td>
+          <td><input value="9" onclick="dig(9)"></td>
+          <td><input value="-" onclick="dig('-')"></td>
+        </tr>
+        <tr>
+          <td><input value="4" onclick="dig(4)"></td>
+          <td><input value="5" onclick="dig(5)"></td>
+          <td><input value="6" onclick="dig(6)"></td>
+          <td><input value="+" onclick="dig('+')"></td>
+        </tr>
+        <tr>
+          <td><input value="1" onclick="dig(1)"></td>
+          <td><input value="2" onclick="dig(2)"></td>
+          <td><input value="3" onclick="dig(3)"></td>
+          <td><input type="button" class="uguale" value="=" onclick="risultato()"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="0" onclick="dig(0)"></td>
+          <td><input type="button" value="00" onclick="dig('00')"></td>
+          <td><input type="button" value="," onclick="dig('.')"></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

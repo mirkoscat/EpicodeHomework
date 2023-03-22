@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+#calc input {
+  width: 60px;
+  height: 60px;
+  margin: 1px;
+  font-size: 15px;
+  border: none;
+}
+
+#calc input:hover {
+  background-color: #ccc;
+}
+
+#calc input:active {
+  background-color: #aaa;
+}
+
+#calcolatrice {
+  background-color: #205E61;
+  width: fit-content;
+  padding: 10px 5px;
+  margin: 10px;
+}
+
+.area {
+  width: 100%;
+  height: 30px;
+  padding: 2px;
+  text-align: right;
+  font-size: 20px
+}
+
+td>input {
+  padding-left: 20px;
+}
+
+.container {
+  display: flex;
+  background-color: #3F979B;
+  justify-content: space-around;
+}
+.uguale{background-color: #F9F54B;}
