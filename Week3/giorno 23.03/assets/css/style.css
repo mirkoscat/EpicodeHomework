@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.cell {width:100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border: 1px solid #333;
+    cursor: pointer;
+
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+.winner {
+    color: green;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.player {
+    color: blue;
+    font-size: 2rem;
+    margin-top: 20px;
+}
