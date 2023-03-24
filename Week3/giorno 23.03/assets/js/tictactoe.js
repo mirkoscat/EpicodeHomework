@@ -1,6 +1,5 @@
-"use strict";
-class TicTacToe {
-    constructor() {
+var TicTacToe = /** @class */ (function () {
+    function TicTacToe() {
         this.currentPlayer = "X";
         this.board = [
             ["", "", ""],
@@ -8,8 +7,8 @@ class TicTacToe {
             ["", "", ""],
         ];
     }
-    checkRows() {
-        for (let i = 0; i < this.board.length; i++) {
+    TicTacToe.prototype.checkRows = function () {
+        for (var i = 0; i < this.board.length; i++) {
             if (this.board[i][0] &&
                 this.board[i][0] === this.board[i][1] &&
                 this.board[i][1] === this.board[i][2]) {
@@ -17,23 +16,23 @@ class TicTacToe {
             }
         }
         return undefined;
-    }
-    play(coordinate) {
-        const { row, col } = coordinate;
+    };
+    TicTacToe.prototype.play = function (coordinate) {
+        var row = coordinate.row, col = coordinate.col;
         if (this.board[row][col] !== "") {
             return null; // Return null if the cell is already taken
         }
         this.board[row][col] = this.currentPlayer;
-        const winner = this.checkWinner();
+        var winner = this.checkWinner();
         if (winner) {
             return winner; // Return the winner if there is one
         }
         this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";
         return null;
-    }
-    checkWinner() {
+    };
+    TicTacToe.prototype.checkWinner = function () {
         // Check rows
-        for (let i = 0; i < 3; i++) {
+        for (var i = 0; i < 3; i++) {
             if (this.board[i][0] !== "" &&
                 this.board[i][0] === this.board[i][1] &&
                 this.board[i][0] === this.board[i][2]) {
@@ -41,7 +40,7 @@ class TicTacToe {
             }
         }
         // Check columns
-        for (let i = 0; i < 3; i++) {
+        for (var i = 0; i < 3; i++) {
             if (this.board[0][i] !== "" &&
                 this.board[0][i] === this.board[1][i] &&
                 this.board[0][i] === this.board[2][i]) {
@@ -61,18 +60,26 @@ class TicTacToe {
         }
         // Return null if there is no winner
         return null;
-    }
-}
+    };
+    TicTacToe.prototype.getCurrentPlayer = function () {
+        return this.currentPlayer;
+    };
+    TicTacToe.prototype.getPlayerAt = function (row, col) {
+        return this.board[row][col];
+    };
+    return TicTacToe;
+}());
 // Instantiate a new TicTacToe game
-const game = new TicTacToe();
+var game = new TicTacToe();
 // Get references to the elements in the DOM
-const boardEl = document.querySelector(".board") || null;
-const winnerEl = document.querySelector(".winner") || null;
-const playerEl = document.querySelector(".player") || null;
+var boardEl = document.querySelector(".board") || null;
+var winnerEl = document.querySelector(".winner") || null;
+var playerEl = document.querySelector(".player") || null;
+playerEl.textContent = "Current player: ".concat(game.getCurrentPlayer());
 // Create the board
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-        const cellEl = document.createElement("div");
+for (var i = 0; i < 3; i++) {
+    for (var j = 0; j < 3; j++) {
+        var cellEl = document.createElement("div");
         cellEl.classList.add("cell");
         cellEl.dataset.row = i.toString();
         cellEl.dataset.col = j.toString();
@@ -82,28 +89,33 @@ for (let i = 0; i < 3; i++) {
 }
 // Handle a click on a cell
 function handleClick(event) {
-    const row = parseInt(event.target.dataset.row);
-    const col = parseInt(event.target.dataset.col);
-    const winner = game.play({ row, col });
+    var row = parseInt(event.target.dataset.row);
+    var col = parseInt(event.target.dataset.col);
+    var winner = game.play({ row: row, col: col });
     if (winner) {
         // Display the winner
-        winnerEl.textContent = `Winner: ${winner}`;
+        winnerEl.textContent = "Winner: ".concat(winner);
         playerEl.textContent = "";
     }
     else {
         // Display the current player
-        playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
+        playerEl.textContent = "Current player: ".concat(game.getCurrentPlayer());
     }
     // Update the board
     updateBoard();
 }
 // Update the board
 function updateBoard() {
-    const cells = boardEl.querySelectorAll(".cell");
-    cells.forEach((cell) => {
-        const row = parseInt(cell.dataset.row);
-        const col = parseInt(cell.dataset.col);
-        const player = game.getPlayerAt({ row, col });
-        cell.textContent = player ? player : "";
+    var cells = boardEl.querySelectorAll(".cell");
+    cells.forEach(function (cell) {
+        var row = parseInt(cell.dataset.row);
+        var col = parseInt(cell.dataset.col);
+        var player = game.getPlayerAt(row, col);
+        if (player) {
+            cell.textContent = player;
+        }
+        else {
+            cell.textContent = "";
+        }
     });
 }
