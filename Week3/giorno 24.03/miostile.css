@@ -1,0 +1,284 @@
+body {
+    font-family: 'Karla', Montserrat, sans-serif;
+    font-weight: 200;
+
+    margin: 0;
+
+}
+
+
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+
+    color: #0c0633;
+}
+
+a {
+    color: #8b62ff;
+    text-decoration: none
+}
+
+a:focus,
+a:hover {
+    color: #5216ff;
+    text-decoration: underline
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+
+    color: #0c0633
+}
+
+p {
+
+    font-size: 1em;
+    font-weight: 100;
+    color: grey;
+}
+
+.darkblue {
+    color: #0c0633;
+}
+
+/* classi generiche. uso flex-center in ogni sezione
+ per centrare il contenuto in tutti i dispositivi*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.mx {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.ml2 {
+    margin-left: 20px;
+}
+
+.mabot {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.mb {
+    margin-bottom: 2em;
+}
+
+.mt {
+    margin-top: 2em;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Header */
+.logoimg {
+    width: 150px;
+    height: 50px;
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-item:hover {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 15%;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.active {
+    background: rgb(119, 122, 121);
+    background: linear-gradient(90deg, rgba(119, 122, 121, 1) 0%, rgba(157, 164, 168, 0.31976540616246496) 35%);
+    border-radius: 15%;
+}
+
+/* Banner */
+
+.banner {
+    padding: 4em 2em 2em 2em;
+    background-image: url("./assets/images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2em;
+    color: white;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+.banner p {
+    font-size: 1em;
+    margin-bottom: 1.75em;
+    color: #fff;
+}
+
+.banner .button {
+    font-size: .9em;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 4px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    height: 3.5em;
+    line-height: 3.5em;
+    padding: 0 3.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+/* gestione immagini */
+
+.imgdim img {
+    width: 80%;
+    border-radius: 100%;
+
+}
+
+.imgdim {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.blue {
+    height: 200px;
+    background-color: rgba(0, 132, 255, 0.678);
+}
+
+.menu {
+    align-content: flex-start;
+    justify-content: flex-end;
+}
+
+.pricing-card {
+    background: #ddd;
+    padding: 5rem 3rem;
+    text-align: center;
+    transform: skew(-5deg, 0);
+}
+
+.pricing-primary {
+    background-color: #98f8f8
+}
+
+.pricing-info {
+    background-color: #ff3848
+}
+
+.pricing-secondary {
+    background-color: #f3e562;
+}
+
+.pricing-features {
+    border-left: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: black;
+}
+
+.pricing-card h3 {
+    color: rgb(0, 0, 0)
+}
+
+.features {
+    padding-left: 40px;
+    list-style: none
+}
+
+.features li {
+    position: relative;
+    margin-bottom: 30px
+}
+
+.download-card {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 5rem 8rem;
+    margin-bottom: 20px
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0
+}
+
+@media (min-width:1025px) {
+
+    /* adattamento dimensioni immagini in caso di dispositivo Desktop */
+    .bannerh {
+        height: 500px;
+    }
+
+
+    .imgdim {
+        width: 100%;
+    }
+
+    .w70 {
+        width: 50%;
+    }
+
+    .w100 {
+        width: 100%;
+    }
+
+    .pl {
+        padding-left: 150px;
+    }
+}
+
