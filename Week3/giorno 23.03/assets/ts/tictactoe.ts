@@ -1,149 +1,127 @@
-// ancora da cambiare. si riesce a vincere, almeno.
-enum Player {
-  X = "X",
-  O = "O",
-  C = "C",
-}
 
 class TicTacToe {
-  
-  private board: Player[][] = [
-    [Player.C, Player.C, Player.C],
-    [Player.C, Player.C, Player.C],
-    [Player.C, Player.C, Player.C],
-  ];
-  private currentPlayer: Player = Player.X;
-  private isGameOver = false;
-  private numMoves = 0;
-  private winner: Player | null = null;
-  private isBoardFull: boolean = false;
+	public currentPlayer: any;
+	public board: any;
+	public row: any;
+	public col: any;
 
-  private checkWinner(): Player | null {
-    // Check righe
-    for (let i = 0; i < 3; i++) {
-      if (
-        this.board[i][0] !== null &&
-        this.board[i][0] === this.board[i][1] &&
-        this.board[i][0] === this.board[i][2]
-      ) {
-        return this.board[i][0];
-      }
+    constructor() {
+        this.currentPlayer = "X";
+        this.board = [
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+        ];
     }
-
-    // Check colonne
-    for (let j = 0; j < 3; j++) {
-      if (
-        this.board[0][j] !== null &&
-        this.board[0][j] === this.board[1][j] &&
-        this.board[0][j] === this.board[2][j]
-      ) {
-        return this.board[0][j];
-      }
-    }
-
-    // Check diagonale  top-left to bottom-right
-    if (
-      this.board[0][0] !== null &&
-      this.board[0][0] === this.board[1][1] &&
-      this.board[0][0] === this.board[2][2]
-    ) {
-      return this.board[0][0];
-    }
-
-    // Check diagonale  top-right to bottom-left
-    if (
-      this.board[0][2] !== null &&
-      this.board[0][2] === this.board[1][1] &&
-      this.board[0][2] === this.board[2][0]
-    ) {
-      return this.board[0][2];
-    }
-
-    
-    return null;
-  }
-
-
-  public playMove(row: number, col: number): void {
-   
-    if (this.isGameOver) throw new Error("Game is over!");
-
-    function isBoardFull(b: any[][]): boolean {
-      for (let row = 0; row < b.length; row++) {
-        for (let col = 0; col < b[row].length; col++) {
-          if (b[row][col] === null) {
-            return false;
-          }
-        }
-      }
-      return true;
-    }
-
-
-    // Update the board with the current player's mark
-    this.board[row][col] = this.currentPlayer;
-
-    // Check if the current player has won
-    this.winner = this.checkWinner();
-
-    // Switch to the other player
-    this.currentPlayer = this.currentPlayer === Player.X ? Player.O : Player.X;
-
-    // Check if the game is over (board is full or there is a winner)
-    if (this.winner !== null || this.isBoardFull) {
-      this.isGameOver = true;
-    }
-  }
-
-
-  public getBoard(): Player[][] {
-    return this.board;
-  }
-  public getWinner(): Player | null {
-    return this.winner;
-  }
-
-  public isGameover(): boolean {
-    return this.winner !== Player.X || this.numMoves < 9;
-  }
-}
-
-
-function renderBoard(board: Player[][], container: HTMLElement): void {
-  // Clear the container
-  container.innerHTML = "";
-
-  // Render each cell in the board
-  for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-      const cell = document.createElement("div");
-      cell.classList.add("cell");
-      cell.textContent = board[i][j] || "";
-      cell.addEventListener("click", () => {
-        if (!game.isGameover()) {
-          try {
-            game.playMove(i, j);
-            renderBoard(game.getBoard(), container);
-            if (game.getWinner()) {
-              alert(`${game.getWinner()} wins!`);
-            } else if (game.isGameover()) {
-              alert("Game over!");
+    checkRows() {
+        for (let i = 0; i < this.board.length; i++) {
+            if (this.board[i][0] &&
+                this.board[i][0] === this.board[i][1] &&
+                this.board[i][1] === this.board[i][2]) {
+                return this.board[i][0];
             }
-          } catch (error: any) {
-            alert(error.message);
-          }
         }
-      });
-      container.appendChild(cell);
+        return undefined;
     }
-  }
+    play(coordinate) {
+        const { row, col } = coordinate;
+        if (this.board[row][col] !== "") {
+            return null; // Return null if the cell is already taken
+        }
+        this.board[row][col] = this.currentPlayer;
+        const winner = this.checkWinner();
+        if (winner) {
+            return winner; // Return the winner if there is one
+        }
+        this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";
+        return null;
+    }
+    checkWinner() {
+        // Check rows
+        for (let i = 0; i < 3; i++) {
+            if (this.board[i][0] !== "" &&
+                this.board[i][0] === this.board[i][1] &&
+                this.board[i][0] === this.board[i][2]) {
+                return this.board[i][0];
+            }
+        }
+        // Check columns
+        for (let i = 0; i < 3; i++) {
+            if (this.board[0][i] !== "" &&
+                this.board[0][i] === this.board[1][i] &&
+                this.board[0][i] === this.board[2][i]) {
+                return this.board[0][i];
+            }
+        }
+        // Check diagonals
+        if (this.board[0][0] !== "" &&
+            this.board[0][0] === this.board[1][1] &&
+            this.board[0][0] === this.board[2][2]) {
+            return this.board[0][0];
+        }
+        if (this.board[0][2] !== "" &&
+            this.board[0][2] === this.board[1][1] &&
+            this.board[0][2] === this.board[2][0]) {
+            return this.board[0][2];
+        }
+        // Return null if there is no winner
+        return null;
+    }
+    getCurrentPlayer() {
+        return this.currentPlayer;
+    }
+    getPlayerAt(row, col) {
+        return this.board[row][col];
+    }
 }
-
-// Get the container element
-const container = document.getElementById("board") as HTMLElement;
-
-// Create a new TicTacToe game
+// Instantiate a new TicTacToe game
 const game = new TicTacToe();
-
-// Render the board
-renderBoard(game.getBoard(), container);
+// Get references to the elements in the DOM
+const boardEl = document.querySelector(".board") || null;
+const winnerEl = document.querySelector(".winner") || null;
+const playerEl = document.querySelector(".player") || null;
+playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`
+// Create the board
+for (let i = 0; i < 3; i++){ 
+    for (let j = 0; j < 3; j++) {
+        const cellEl = document.createElement("div");
+        cellEl.classList.add("cell");
+        cellEl.dataset.row = i.toString();
+        cellEl.dataset.col = j.toString();
+        cellEl.addEventListener("click", handleClick);
+        boardEl.appendChild(cellEl) || null;
+    }
+}
+// Handle a click on a cell
+function handleClick(event) {
+    const row = parseInt(event.target.dataset.row);
+    const col = parseInt(event.target.dataset.col);
+    const winner = game.play({ row, col });
+    if (winner) {
+        // Display the winner
+        winnerEl.textContent = `Winner: ${winner}`;
+        playerEl.textContent = "";
+    }
+    else {
+        // Display the current player
+        playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
+    }
+    // Update the board
+    updateBoard();
+}
+// Update the board
+function updateBoard() {
+    const cells = boardEl.querySelectorAll(".cell") as NodeListOf<HTMLDivElement>;
+    cells.forEach((cell) => {
+        const row = parseInt(cell.dataset.row);
+        const col = parseInt(cell.dataset.col);
+        const player = game.getPlayerAt(row,col);
+        if (player) {
+            cell.textContent = player;
+        }
+        else {
+            cell.textContent = "";
+        }
+      }
+    );
+}
