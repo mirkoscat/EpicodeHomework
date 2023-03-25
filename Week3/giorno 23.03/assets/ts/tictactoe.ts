@@ -1,9 +1,9 @@
 
 class TicTacToe {
-	public currentPlayer: any;
-	public board: any;
-	public row: any;
-	public col: any;
+    public currentPlayer: any;
+    public board: any;
+    public row: any;
+    public col: any;
 
     constructor() {
         this.currentPlayer = "X";
@@ -30,6 +30,9 @@ class TicTacToe {
         }
         this.board[row][col] = this.currentPlayer;
         const winner = this.checkWinner();
+        if (winner === "tie") {
+            return winner; // Return the winner if there is one
+        }
         if (winner) {
             return winner; // Return the winner if there is one
         }
@@ -64,8 +67,27 @@ class TicTacToe {
             this.board[0][2] === this.board[2][0]) {
             return this.board[0][2];
         }
+
+        // Check for tie
+        let isTie = true;
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                if (this.board[i][j] === "") {
+                    isTie = false;
+                    break;
+                }
+            }
+            if (!isTie) {
+                return null;
+                break;
+            }
+        }
+        if (isTie) {
+            return "tie";
+        }
+
+
         // Return null if there is no winner
-        return null;
     }
     getCurrentPlayer() {
         return this.currentPlayer;
@@ -82,7 +104,7 @@ const winnerEl = document.querySelector(".winner") || null;
 const playerEl = document.querySelector(".player") || null;
 playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`
 // Create the board
-for (let i = 0; i < 3; i++){ 
+for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
         const cellEl = document.createElement("div");
         cellEl.classList.add("cell");
@@ -97,13 +119,19 @@ function handleClick(event) {
     const row = parseInt(event.target.dataset.row);
     const col = parseInt(event.target.dataset.col);
     const winner = game.play({ row, col });
-    if (winner) {
+    console.log(winner)
+    if (winner && winner !== "tie") {
         // Display the winner
         winnerEl.textContent = `Winner: ${winner}`;
+        playerEl.textContent = "";
+    } else if (winner === "tie") {
+        // Display the winner
+        winnerEl.textContent = `It's a tie!`;
         playerEl.textContent = "";
     }
     else {
         // Display the current player
+        console.log(winner)
         playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
     }
     // Update the board
@@ -115,13 +143,13 @@ function updateBoard() {
     cells.forEach((cell) => {
         const row = parseInt(cell.dataset.row);
         const col = parseInt(cell.dataset.col);
-        const player = game.getPlayerAt(row,col);
+        const player = game.getPlayerAt(row, col);
         if (player) {
             cell.textContent = player;
         }
         else {
             cell.textContent = "";
         }
-      }
+    }
     );
 }

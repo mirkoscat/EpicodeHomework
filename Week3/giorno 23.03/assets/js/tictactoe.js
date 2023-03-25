@@ -24,6 +24,9 @@ var TicTacToe = /** @class */ (function () {
         }
         this.board[row][col] = this.currentPlayer;
         var winner = this.checkWinner();
+        if (winner === "tie") {
+            return winner; // Return the winner if there is one
+        }
         if (winner) {
             return winner; // Return the winner if there is one
         }
@@ -58,8 +61,24 @@ var TicTacToe = /** @class */ (function () {
             this.board[0][2] === this.board[2][0]) {
             return this.board[0][2];
         }
+        // Check for tie
+        var isTie = true;
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                if (this.board[i][j] === "") {
+                    isTie = false;
+                    break;
+                }
+            }
+            if (!isTie) {
+                return null;
+                break;
+            }
+        }
+        if (isTie) {
+            return "tie";
+        }
         // Return null if there is no winner
-        return null;
     };
     TicTacToe.prototype.getCurrentPlayer = function () {
         return this.currentPlayer;
@@ -92,13 +111,20 @@ function handleClick(event) {
     var row = parseInt(event.target.dataset.row);
     var col = parseInt(event.target.dataset.col);
     var winner = game.play({ row: row, col: col });
-    if (winner) {
+    console.log(winner);
+    if (winner && winner !== "tie") {
         // Display the winner
         winnerEl.textContent = "Winner: ".concat(winner);
         playerEl.textContent = "";
     }
+    else if (winner === "tie") {
+        // Display the winner
+        winnerEl.textContent = "It's a tie!";
+        playerEl.textContent = "";
+    }
     else {
         // Display the current player
+        console.log(winner);
         playerEl.textContent = "Current player: ".concat(game.getCurrentPlayer());
     }
     // Update the board
