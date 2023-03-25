@@ -38,7 +38,6 @@ body {
     font-size: 2rem;
     margin-top: 20px;
 }
-
 .reset button{
     color: white;
     padding: 10px 20px;
@@ -47,3 +46,6 @@ body {
     background: rgb(202, 60, 60);
 
 }
+.hidden {
+        display: none;
+    }
