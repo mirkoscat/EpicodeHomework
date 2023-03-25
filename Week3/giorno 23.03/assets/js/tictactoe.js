@@ -62,23 +62,35 @@ class TicTacToe {
         // Return null if there is no winner
         return null;
     }
-}
-// Instantiate a new TicTacToe game
-const game = new TicTacToe();
-// Get references to the elements in the DOM
-const boardEl = document.querySelector(".board") || null;
-const winnerEl = document.querySelector(".winner") || null;
-const playerEl = document.querySelector(".player") || null;
-// Create the board
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-        const cellEl = document.createElement("div");
-        cellEl.classList.add("cell");
-        cellEl.dataset.row = i.toString();
-        cellEl.dataset.col = j.toString();
-        cellEl.addEventListener("click", handleClick);
-        boardEl.appendChild(cellEl) || null;
+    getCurrentPlayer() {
+        return this.currentPlayer;
     }
+    getPlayerAt(row, col) {
+        return this.board[row][col];
+    }
+}
+// Get references to the elements in the DOM
+const boardEl = document.querySelector(".board");
+const winnerEl = document.querySelector(".winner");
+const playerEl = document.querySelector(".player");
+const refreshButton = document.querySelector("#refresh-button");
+let game;
+// Create a new game and render the board
+function newGame() {
+    game = new TicTacToe();
+    playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
+    boardEl.innerHTML = "";
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            const cellEl = document.createElement("div");
+            cellEl.classList.add("cell");
+            cellEl.dataset.row = i.toString();
+            cellEl.dataset.col = j.toString();
+            cellEl.addEventListener("click", handleClick);
+            boardEl.appendChild(cellEl);
+        }
+    }
+    updateBoard();
 }
 // Handle a click on a cell
 function handleClick(event) {
@@ -101,9 +113,25 @@ function handleClick(event) {
 function updateBoard() {
     const cells = boardEl.querySelectorAll(".cell");
     cells.forEach((cell) => {
-        const row = parseInt(cell.dataset.row);
-        const col = parseInt(cell.dataset.col);
-        const player = game.getPlayerAt({ row, col });
-        cell.textContent = player ? player : "";
+        var _a, _b;
+        const row = parseInt((_a = cell.dataset.row) !== null && _a !== void 0 ? _a : "");
+        const col = parseInt((_b = cell.dataset.col) !== null && _b !== void 0 ? _b : "");
+        const player = game.getPlayerAt(row, col);
+        if (player) {
+            cell.textContent = player;
+        }
+        else {
+            cell.textContent = "";
+        }
     });
+}
+// Start a new game when the page loads
+newGame();
+// Add a click event listener to the Refresh button
+refreshButton.addEventListener("click", handleRefresh);
+function handleRefresh() {
+    game = new TicTacToe();
+    playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
+    winnerEl.textContent = "";
+    updateBoard();
 }
