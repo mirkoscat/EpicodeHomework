@@ -86,6 +86,14 @@ var TicTacToe = /** @class */ (function () {
     TicTacToe.prototype.getPlayerAt = function (row, col) {
         return this.board[row][col];
     };
+    TicTacToe.prototype.reset = function () {
+        this.currentPlayer = "X";
+        this.board = [
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+        ];
+    };
     return TicTacToe;
 }());
 // Instantiate a new TicTacToe game
@@ -111,21 +119,24 @@ function handleClick(event) {
     var row = parseInt(event.target.dataset.row);
     var col = parseInt(event.target.dataset.col);
     var winner = game.play({ row: row, col: col });
+    var test = document.querySelector(".reset") || null;
     console.log(winner);
     if (winner && winner !== "tie") {
         // Display the winner
         winnerEl.textContent = "Winner: ".concat(winner);
         playerEl.textContent = "";
+        test.classList.toggle("hidden");
+        console.log(test.classList.contains("hidden"));
     }
     else if (winner === "tie") {
         // Display the winner
         winnerEl.textContent = "It's a tie!";
         playerEl.textContent = "";
+        test.classList.toggle("hidden");
     }
     else {
         // Display the current player
         console.log(winner);
-        playerEl.textContent = "Current player: ".concat(game.getCurrentPlayer());
     }
     // Update the board
     updateBoard();
@@ -144,4 +155,12 @@ function updateBoard() {
             cell.textContent = "";
         }
     });
+}
+function reset() {
+    game.reset();
+    updateBoard();
+    var test = document.querySelector(".reset") || null;
+    test.classList.toggle("hidden");
+    winnerEl.textContent = "";
+    playerEl.textContent = "Current player: ".concat(game.getCurrentPlayer());
 }

@@ -95,7 +95,15 @@ class TicTacToe {
     getPlayerAt(row, col) {
         return this.board[row][col];
     }
-}
+    reset() {
+        this.currentPlayer = "X";
+        this.board = [
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+        ];
+    }
+    }
 // Instantiate a new TicTacToe game
 const game = new TicTacToe();
 // Get references to the elements in the DOM
@@ -119,20 +127,24 @@ function handleClick(event) {
     const row = parseInt(event.target.dataset.row);
     const col = parseInt(event.target.dataset.col);
     const winner = game.play({ row, col });
+    const test = document.querySelector(".reset") || null;
     console.log(winner)
     if (winner && winner !== "tie") {
         // Display the winner
         winnerEl.textContent = `Winner: ${winner}`;
         playerEl.textContent = "";
+        test.classList.toggle("hidden");
+        console.log(test.classList.contains("hidden"))
+
     } else if (winner === "tie") {
         // Display the winner
         winnerEl.textContent = `It's a tie!`;
         playerEl.textContent = "";
+        test.classList.toggle("hidden");
     }
     else {
         // Display the current player
         console.log(winner)
-        playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
     }
     // Update the board
     updateBoard();
@@ -152,4 +164,13 @@ function updateBoard() {
         }
     }
     );
+}
+
+function reset() {
+    game.reset();
+    updateBoard();
+    const test = document.querySelector(".reset") || null;
+    test.classList.toggle("hidden");
+    winnerEl.textContent = "";
+    playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
 }
