@@ -1,3 +1,4 @@
+//ringrazio @andreaguli14 per i fix visivi
 enum Player { X = "X", O = "O", Empty = "" }
 class TicTacToe {
 
