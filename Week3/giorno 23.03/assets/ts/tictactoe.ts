@@ -1,5 +1,8 @@
-//ringrazio @andreaguli14 per i fix dei simboli sulla tabella
+//ringrazio @andreaguli14 per i fix dei simboli su tabella e check pareggio
+
+// Definizione dell'enumerazione Player
 enum Player { X = "X", O = "O", Empty = "" }
+
 class TicTacToe {
 
   public currentPlayer: any;
@@ -8,7 +11,6 @@ class TicTacToe {
   public col: any;
 
   constructor() {
-
     this.currentPlayer = Player.X;
     this.board = [
       [Player.Empty,Player.Empty,Player.Empty],
@@ -31,24 +33,27 @@ class TicTacToe {
     if (winner) {
       return winner; // Return the winner if there is one
     }
+    //switch giocatore corrente
     this.currentPlayer = this.currentPlayer === Player.X ? Player.O : Player.X;
+    
     return null;
   }
-
-  checkWinner() {
-    // Check rows
+  
+//a ogni click cerco un vincitore
+  checkWinner():string | null | undefined {
+    // Check righe
     for (let i = 0; i < 3; i++) {
       if (this.board[i][0] !== Player.Empty && this.board[i][0] === this.board[i][1] && this.board[i][0] === this.board[i][2]) {
         return this.board[i][0];
       }
     }
-    // Check columns
+    // Check colonne
     for (let i = 0; i < 3; i++) {
       if (this.board[0][i] !== Player.Empty &&this.board[0][i] === this.board[1][i] &&this.board[0][i] === this.board[2][i]) {
         return this.board[0][i];
       }
     }
-    // Check diagonals
+    // Check diagonali
     if (this.board[0][0] !== Player.Empty &&this.board[0][0] === this.board[1][1] &&this.board[0][0] === this.board[2][2]) {
       return this.board[0][0];
     }
@@ -74,29 +79,32 @@ class TicTacToe {
     }
 
   }
-  getCurrentPlayer() {
+  
+  //torna il giocatore corrente
+  getCurrentPlayer():string {
     return this.currentPlayer;
   }
-  getPlayerAt(row: any, col: any) {
+  
+  //torna il giocatore in una certa posizione
+  getPlayerAt(row: any, col: any):Player {
     return this.board[row][col];
   }
-
-  
 }
 
-// Get references to the elements in the DOM
+
+// Referenze elementi DOM
 const boardEl = document.querySelector(".board") as HTMLDivElement;
 const winnerEl = document.querySelector(".winner") as HTMLDivElement;
 const playerEl = document.querySelector(".player") as HTMLDivElement;
 const refreshButton = document.querySelector("#refresh-button") as HTMLButtonElement;
 
+// Dichiaro un gioco di tipo tris
 let game: TicTacToe;
 
-// Create a new game and render the board
+// Creo una funzione che fa partire un nuovo gioco
 function newGame() {
   game = new TicTacToe();
   playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
-
   boardEl.innerHTML = "";
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
@@ -108,62 +116,62 @@ function newGame() {
       boardEl.appendChild(cellEl);
     }
   }
-
   updateBoard();
 }
 
-// Handle a click on a cell
+// Click su una cella
 function handleClick(event: any) {
   const row = parseInt(event.target.dataset.row);
   const col = parseInt(event.target.dataset.col);
   const winner = game.play({ row, col });
-  var test = document.querySelector(".reset") || null;
+  var test = document.querySelector(".reset");
   console.log(winner);
   if (winner && winner !== "tie") {
-    // Display the winner
+    // Visualizza vincitore
     winnerEl.textContent = "Winner: ".concat(winner);
     playerEl.textContent = "";
     test?.classList.toggle("hidden");
     console.log(test?.classList.contains("hidden"));
   }
   else if (winner === "tie") {
-    // Display the winner
+    // Visualizza vincitore
     winnerEl.textContent = "It's a tie!";
-    playerEl.textContent = "";
+    playerEl.textContent = Player.Empty;
     test?.classList.toggle("hidden");
   } else {
-    // Display the current player
+    // Visualizza current player
     playerEl.textContent = "Current player: ".concat(game.getCurrentPlayer());
     console.log(winner);
   }
-  // Update the board
+  // Aggiorna la tabella
   updateBoard();
 }
 
-// Update the board
+// Aggiorna la tabella
 function updateBoard() {
   const cells = boardEl.querySelectorAll(".cell") as NodeListOf<HTMLDivElement>;
   cells.forEach((cell) => {
-    const row = parseInt(cell.dataset.row ?? "");
-    const col = parseInt(cell.dataset.col ?? "");
+    const row = parseInt(cell.dataset.row ?? Player.Empty);
+    const col = parseInt(cell.dataset.col ?? Player.Empty);
+    //creo il giocatore in una certa posizione
     const player = game.getPlayerAt(row, col);
     if (player) {
       cell.textContent = player;
     } else {
-      cell.textContent = "";
+      cell.textContent = Player.Empty;
     }
   });
 }
 
-// Start a new game when the page loads
+// Parte il gioco quando la pagina carica
 newGame();
 
-// Add a click event listener to the Refresh button
+// Listener bottone refresh aggiunto in un secondo momento
 refreshButton.addEventListener("click", handleRefresh);
 
 function handleRefresh() {
   game = new TicTacToe();
   playerEl.textContent = `Current player: ${game.getCurrentPlayer()}`;
-  winnerEl.textContent = "";
+  winnerEl.textContent = Player.Empty;
   updateBoard();
 }
