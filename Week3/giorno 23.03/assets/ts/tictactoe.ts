@@ -1,4 +1,4 @@
-//ringrazio @andreaguli14 per i fix visivi
+//ringrazio @andreaguli14 per i fix dei simboli sulla tabella e il
 enum Player { X = "X", O = "O", Empty = "" }
 class TicTacToe {
 
