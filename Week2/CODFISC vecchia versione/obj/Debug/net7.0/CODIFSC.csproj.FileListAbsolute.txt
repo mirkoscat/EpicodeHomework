@@ -1,0 +1,45 @@
+D:\CODING\CODIFSC\bin\Debug\net7.0\CODIFSC.exe
+D:\CODING\CODIFSC\bin\Debug\net7.0\CODIFSC.deps.json
+D:\CODING\CODIFSC\bin\Debug\net7.0\CODIFSC.runtimeconfig.json
+D:\CODING\CODIFSC\bin\Debug\net7.0\CODIFSC.dll
+D:\CODING\CODIFSC\bin\Debug\net7.0\CODIFSC.pdb
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.csproj.AssemblyReference.cache
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.AssemblyInfoInputs.cache
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.AssemblyInfo.cs
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.csproj.CoreCompileInputs.cache
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.dll
+D:\CODING\CODIFSC\obj\Debug\net7.0\refint\CODIFSC.dll
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.pdb
+D:\CODING\CODIFSC\obj\Debug\net7.0\CODIFSC.genruntimeconfig.cache
+D:\CODING\CODIFSC\obj\Debug\net7.0\ref\CODIFSC.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\bin\Debug\net7.0\CODIFSC.exe
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\bin\Debug\net7.0\CODIFSC.deps.json
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\bin\Debug\net7.0\CODIFSC.runtimeconfig.json
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\bin\Debug\net7.0\CODIFSC.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\bin\Debug\net7.0\CODIFSC.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.AssemblyInfo.cs
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\refint\CODIFSC.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\CODIFSC.genruntimeconfig.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week3\CODIFSC\obj\Debug\net7.0\ref\CODIFSC.dll
+D:\SVILUPPO .NET\CODIFSC\bin\Debug\net7.0\CODIFSC.exe
+D:\SVILUPPO .NET\CODIFSC\bin\Debug\net7.0\CODIFSC.deps.json
+D:\SVILUPPO .NET\CODIFSC\bin\Debug\net7.0\CODIFSC.runtimeconfig.json
+D:\SVILUPPO .NET\CODIFSC\bin\Debug\net7.0\CODIFSC.dll
+D:\SVILUPPO .NET\CODIFSC\bin\Debug\net7.0\CODIFSC.pdb
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.AssemblyInfo.cs
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.dll
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\refint\CODIFSC.dll
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.pdb
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\CODIFSC.genruntimeconfig.cache
+D:\SVILUPPO .NET\CODIFSC\obj\Debug\net7.0\ref\CODIFSC.dll

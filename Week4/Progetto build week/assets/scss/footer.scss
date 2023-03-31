@@ -1,0 +1,13 @@
+footer {
+    margin-top: 10px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+}
+.footerborder {
+    border-top: 5px solid $mainPurple;
+}

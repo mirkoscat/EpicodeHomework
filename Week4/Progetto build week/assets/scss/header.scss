@@ -1,0 +1,46 @@
+$firstPurple: #865DFF;
+$neonPink: #E384FF;
+$Pink: #FFA3FD;
+$yellow: #F5EA5A;
+$black: #000000;
+$transparentWhite: rgba(255, 255, 255, 0.9);
+
+/* Aggiunge una transizione allo sfondo */
+.nav-link {
+    background-color: $firstPurple;
+    border-radius: 5px;
+    transition: background-color 1.5s ease-out;
+    color: $neonPink;
+}
+
+/* Cambia lo sfondo in hover */
+.nav-link:hover {
+    background-color: $yellow;
+    box-shadow: 0 0 10px $transparentWhite;
+    color: $black;
+}
+
+.navborder {
+    border-bottom: 5px solid $firstPurple;
+}
+
+
+.icon:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+}
+
+/*colori cambio logo vedi js*/
+.rosso {
+    color: $firstPurple;
+}
+
+.verde {
+    color: $neonPink;
+}
+
+.blu {
+    color: $Pink;
+}

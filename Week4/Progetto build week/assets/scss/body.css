@@ -1,0 +1,172 @@
+body {
+  background-color: rgb(36, 34, 34);
+  color: #000000;
+}
+
+h1 {
+  font-family: "Rajdhani", sans-serif;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.bgcontainer {
+  background-image: url("../images/sfondo2.jpg");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  border-radius: 15px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.ml1 {
+  margin-left: 1px;
+}
+
+.pr0 {
+  padding-right: 0px;
+}
+
+.pl0 {
+  padding-left: 0px;
+}
+
+.ptb0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.ofh {
+  overflow: hidden;
+}
+
+.h500 {
+  height: 500px;
+}
+
+.purple {
+  color: #8187dc;
+}
+
+.transparent {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 10px;
+}
+
+/*sezione cards*/
+.firstcards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding-left: 2px;
+}
+
+.prezzo {
+  position: relative;
+  bottom: 50px;
+  width: 60px;
+}
+
+.sconti {
+  position: relative;
+  top: 50px;
+  background-color: #ff8c00;
+  color: #ff0000;
+  border-radius: 5px;
+  width: 45px;
+  z-index: 20;
+}
+
+/*dimensionamento immagini*/
+.bestimg {
+  width: 300px;
+}
+
+.detailsimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 70%;
+}
+
+.dettagliata {
+  width: 300px;
+  height: 185px;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: #8187dc;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.button::hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+/* padding, margini, classi generiche*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/*ombreggiature*/
+.cardshadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.shadowed-text {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.shadowed-text-less {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.shadowed-text-white {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/*posizionamento bottoni filtro*/
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.justifyfilterend {
+  justify-content: flex-end;
+}
+
+.justifyfilterstart {
+  justify-content: flex-start;
+}/*# sourceMappingURL=body.css.map */

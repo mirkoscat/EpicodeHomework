@@ -1,0 +1,35 @@
+/* Aggiunge una transizione allo sfondo */
+.nav-link {
+  background-color: #865DFF;
+  border-radius: 5px;
+  transition: background-color 1.5s ease-out;
+  color: #E384FF;
+}
+
+/* Cambia lo sfondo in hover */
+.nav-link:hover {
+  background-color: #F5EA5A;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  color: #000000;
+}
+
+.navborder {
+  border-bottom: 5px solid #865DFF;
+}
+
+.icon:hover {
+  transform: scale(2);
+}
+
+/*colori cambio logo vedi js*/
+.rosso {
+  color: #865DFF;
+}
+
+.verde {
+  color: #E384FF;
+}
+
+.blu {
+  color: #FFA3FD;
+}/*# sourceMappingURL=header.css.map */

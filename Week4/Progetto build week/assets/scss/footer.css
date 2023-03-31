@@ -1,0 +1,10 @@
+footer {
+  margin-top: 10px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerborder {
+  border-top: 5px solid #8187dc;
+}/*# sourceMappingURL=footer.css.map */
