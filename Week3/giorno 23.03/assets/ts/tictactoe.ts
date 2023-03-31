@@ -81,7 +81,7 @@ class TicTacToe {
   }
   
   //torna il giocatore corrente
-  getCurrentPlayer():string {
+  getCurrentPlayer():string  {
     return this.currentPlayer;
   }
   
