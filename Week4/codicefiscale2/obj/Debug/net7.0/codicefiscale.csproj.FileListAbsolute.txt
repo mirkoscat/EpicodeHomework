@@ -1,0 +1,30 @@
+C:\Users\icesa\Desktop\codicefiscale\bin\Debug\net7.0\codicefiscale.exe
+C:\Users\icesa\Desktop\codicefiscale\bin\Debug\net7.0\codicefiscale.deps.json
+C:\Users\icesa\Desktop\codicefiscale\bin\Debug\net7.0\codicefiscale.runtimeconfig.json
+C:\Users\icesa\Desktop\codicefiscale\bin\Debug\net7.0\codicefiscale.dll
+C:\Users\icesa\Desktop\codicefiscale\bin\Debug\net7.0\codicefiscale.pdb
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.csproj.AssemblyReference.cache
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.AssemblyInfoInputs.cache
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.AssemblyInfo.cs
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.csproj.CoreCompileInputs.cache
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.dll
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\refint\codicefiscale.dll
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.pdb
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\codicefiscale.genruntimeconfig.cache
+C:\Users\icesa\Desktop\codicefiscale\obj\Debug\net7.0\ref\codicefiscale.dll
+D:\SVILUPPO .NET\codicefiscale2\bin\Debug\net7.0\codicefiscale.exe
+D:\SVILUPPO .NET\codicefiscale2\bin\Debug\net7.0\codicefiscale.deps.json
+D:\SVILUPPO .NET\codicefiscale2\bin\Debug\net7.0\codicefiscale.runtimeconfig.json
+D:\SVILUPPO .NET\codicefiscale2\bin\Debug\net7.0\codicefiscale.dll
+D:\SVILUPPO .NET\codicefiscale2\bin\Debug\net7.0\codicefiscale.pdb
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.AssemblyInfo.cs
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.dll
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\refint\codicefiscale.dll
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.pdb
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\codicefiscale.genruntimeconfig.cache
+D:\SVILUPPO .NET\codicefiscale2\obj\Debug\net7.0\ref\codicefiscale.dll
