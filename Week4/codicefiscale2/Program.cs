@@ -15,27 +15,24 @@ namespace codicefiscale
             public string CodiceFiscale { get; internal set; }
 
             private CodiceFiscale codiceFiscale;
-
-          
         }
 
         public class CodiceFiscale
         {
             public static readonly bool Sesso;
-
             public string Comune { get; private set; }
             public DateTime DataDiNascita { get; private set; }
 
 
             private static string CalcolaCognome(object cognome)
             {
-                
                 //cognome 1a 2a 3a consonante
 
                 string cognomestringa = cognome.ToString();
 
                 var consonanti = "";
                 var vocali = "";
+                
                 //popolo vocali e consonanti
                 for (int i = 0; i < cognomestringa.Length; i++)
                 {
@@ -45,7 +42,7 @@ namespace codicefiscale
                     }
                     else { vocali += cognomestringa[i]; }
                 }
-                //se ci sono meno di tre consonanti, aggiungo le vocali
+                
                 //se ci sono fino a 2 consonanti, aggiungo le vocali
                 if (consonanti.Length < 3)
                 {
@@ -186,18 +183,13 @@ namespace codicefiscale
                     default:
                         mesenascita = 'X';
                         break;
-                }
-               
+                }  
                 return new ValoriNascita { Giorno = giorno, MeseNascita = mesenascita, Anno = anno };
-
-
             }
 
             public static string CalcolaComune(string comune)
             {
-                
                 var codiceComune = "";
-
                 switch (comune)
                 {
                     case "ACIREALE":
@@ -220,12 +212,9 @@ namespace codicefiscale
 
                 return codiceComune;
             }
-
-
+            
             public static char CalcolaCarattereControllo(string codiceFiscale)
             {
-
-
                 // Scompone la stringa in un array di caratteri
                 char[] caratteri = codiceFiscale.ToCharArray();
 
@@ -523,8 +512,6 @@ namespace codicefiscale
                         break;
 
                 }
-
-                // Restituisci il carattere di controllo
                 return carattereControllo;
             }
 
@@ -581,24 +568,16 @@ namespace codicefiscale
 
             // inizializzo oggetto valoriNascita per scomporre i valori
             ValoriNascita valoriNascita = CalcolaValoriNascita(p.DataDiNascita);
-
-
-
-
         }
+        
         static void Main(string[] args)
         {
-
-
             Persona p = new Persona();
             chiediDati(p);
             string codicefiscale = CalcolaCodiceFiscale(p);
             p.CodiceFiscale = codicefiscale;
            
             Console.WriteLine("il tuo codice fiscale è: " + p.CodiceFiscale);
-
-        }
-
-      
+        }  
     }
 }
