@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\icesa\\Desktop\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj": {}
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 05.04\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj": {}
   },
   "projects": {
-    "C:\\Users\\icesa\\Desktop\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 05.04\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\icesa\\Desktop\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 05.04\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj",
         "projectName": "Gestionecomuniitaliani",
-        "projectPath": "C:\\Users\\icesa\\Desktop\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 05.04\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\icesa\\Desktop\\Gestionecomuniitaliani\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 05.04\\Gestionecomuniitaliani\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oqjXVUAecXUU5cE0FMQIdq3AD8637E/j5/yklZd9XqpG/CfykWt22hg/GRO3IJGJcfCxXTa5jkqbHmxzE6XW3Q==",
+  "dgSpecHash": "tyRRKclzsieGtVCkJjo5ePFAYblPI0wNeDy2TNMySBUtV07RY7Uzqzp/5gu6XtbThDpuyVUXdrpykgKGGSB2FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 05.04\\Gestionecomuniitaliani\\Gestionecomuniitaliani.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

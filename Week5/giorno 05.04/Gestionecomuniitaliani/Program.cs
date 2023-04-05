@@ -12,7 +12,10 @@ namespace Gestionecomuniitaliani
             ServiziGestioneComuniItaliani servizio = new ServiziGestioneComuniItaliani { Connection = dbConnection };
             Console.WriteLine("Comuni che terminano con la stringa «oma»");
             servizio.VisualizzaComuni("%oma");
-            
+            Console.WriteLine("Comuni della provincia di Catania");
+            servizio.VisualizzaComuniCT("CT");
+           
+
         }
     }
 }

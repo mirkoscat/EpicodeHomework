@@ -16,7 +16,8 @@ namespace Gestionecomuniitaliani.Dati
         public Province Provincia { get; set; }
         public override string ToString()
         {
-            return $"Comune(ID = {Id}, Denominazione = {Denominazione}, SiglaProvincia = {SiglaProvincia}, Capoluogo = {Capoluogo}, Catastale = {Catastale}, Provincia = {Provincia})";
+            return $"{Denominazione}";
+            //return $"Comune(ID = {Id}, Denominazione = {Denominazione}, SiglaProvincia = {SiglaProvincia}, Capoluogo = {Capoluogo}, Catastale = {Catastale}, Provincia = {Provincia})";
         }
     }
 }

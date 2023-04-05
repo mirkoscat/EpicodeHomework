@@ -14,6 +14,38 @@ namespace Gestionecomuniitaliani.Servizi
         public IDbConnection Connection { get; set; }
 
         const string SELECT = "select c.ID, c.Denominazione AS Citta, c.SiglaProvincia AS Sigla, c.Capoluogo, c.Catastale, p.Denominazione AS Provincia,r.ID as ID_Regione, r.Denominazione_regione As Regione, ri.Denominazione AS Ripartizione,ri.ID AS ID_Ripartizione from Comuni as c join Province as p on c.SiglaProvincia = p.Sigla join Regioni as r on p.ID_Regione = r.ID join Ripartizioni as ri on r.ID_Ripartizione = ri.ID WHERE c.Denominazione LIKE '%oma'";
+
+        const string SELECT2 = "select Denominazione from Comuni where SiglaProvincia like 'CT'";
+
+        public void VisualizzaComuniCT(string nome)
+        {
+            //se connessione=null uscire
+            if (Connection == null) return;
+
+            //1-collegarsi,
+            Connection.Open();
+            // crea comando
+            IDbCommand select = Connection.CreateCommand();
+            select.CommandText = SELECT2;
+            //crea parametro
+            IDbDataParameter param = select.CreateParameter();
+            param.ParameterName = "@nome";
+            select.Parameters.Add(param);
+            param.Value =nome;
+            IDataReader reader = select.ExecuteReader();
+            while (reader.Read())
+            {
+                Comuni comune = new Comuni
+                {
+               
+                    Denominazione = reader.GetString(0)
+                   
+                };
+                Console.WriteLine(comune);
+            };
+            Connection.Close();
+
+        }
         public void VisualizzaComuni(string partedelnome) {
             //se connessione=null uscire
             if (Connection == null) return;
