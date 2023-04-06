@@ -1,0 +1,14 @@
+﻿Implementare una lista delle cose da fare
+
+Cosa è un ToDo
+
+Per ogni [ToDo] occorre salvare la [data], [l'ora], un [titolo], una [descrizione]
+e occorre conoscere se l'operazione è stata [effettuata o meno]
+
+ToDo
+	ID				Intero
+	Data e Ora		Data+Orario
+	Titolo			Stringa(30)
+	Descrizione		Stringa(255)
+	Effettuato		Booleano
+
