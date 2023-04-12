@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EMJE6MKmGCPJ2gNmOhec8sRBY4ezm+L8u2dNMcAWLyvRMN3fOgeSVeS3fQ1OL97yi4VFrDNQDnz8iXR0cbQ3Tg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\icesa\\Desktop\\ListaComuni\\ListaComuni.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\icesa\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -20,3 +20,25 @@ C:\Users\icesa\Desktop\GestioneBlog\obj\Debug\net7.0\refint\GestioneBlog.dll
 C:\Users\icesa\Desktop\GestioneBlog\obj\Debug\net7.0\GestioneBlog.pdb
 C:\Users\icesa\Desktop\GestioneBlog\obj\Debug\net7.0\GestioneBlog.genruntimeconfig.cache
 C:\Users\icesa\Desktop\GestioneBlog\obj\Debug\net7.0\ref\GestioneBlog.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\GestioneBlog.exe
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\GestioneBlog.deps.json
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\GestioneBlog.runtimeconfig.json
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\GestioneBlog.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\GestioneBlog.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.AssemblyInfo.cs
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.csproj.CopyComplete
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\refint\GestioneBlog.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\GestioneBlog.genruntimeconfig.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week5\giorno 06.04\GestioneBlog\obj\Debug\net7.0\ref\GestioneBlog.dll

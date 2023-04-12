@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+    //  generare una lista di 500 numeri 
+    List<int> GeneraNumeri()
+    {
+        List<int> numeri = new List<int>();
+
+        for (int i = 1; i <= 500; i++)
+        {
+            numeri.Add(i);
+        }
+
+        return numeri;
+    }
+
+    
+    //creare un metodo che converte un numero in un numero binario
+    string ConvertiBinario(int numero)
+    {
+        string binario = Convert.ToString(numero, 2);
+        return binario;
+    }
+    // creare un metodo che converte un numero in un numero esadecimale
+    string ConvertiEsadecimale(int numero)
+    {
+        string esadecimale = Convert.ToString(numero, 16);
+        return esadecimale;
+    }
+
+    string ConvertiRomani(int number)
+    {
+       
+        string[] thousands = { "", "M", "MM", "MMM" };
+        string[] hundreds = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
+        string[] tens = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+        string[] units = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+
+        return thousands[number / 1000] + hundreds[(number % 1000) / 100] + tens[(number % 100) / 10] + units[number % 10];
+    }
+
+}
+
+
+<main>
+    <!--parte di pagina vhe viene inclusa nel layout su views\shared\layout nel render body-->
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Tabella Pitagorica</h1>
+                    <table class="table table-striped text-center">
+                        @for (int i = 1; i < 11; i++)
+                        {
+                            <tr>
+                                @for (int j = 1; j < 11; j++)
+                                {
+                                    int z = i * j;
+                                    <td>@z</td>
+                                }
+                            </tr>
+                        }
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h1>Tabella di conversione</h1>
+                    <table class="table table-striped text-center">
+                        <tbody>
+                        <thead>
+                            <tr>
+                                <th>Numeri</th>
+                                <th>Binari</th>
+                                <th>HEX</th>
+                                <th>Romani</th>
+                            </tr>
+                        </thead>
+                        @foreach (var n in GeneraNumeri())
+                        {
+                            string romani = ConvertiRomani(n);
+                            string binari = ConvertiBinario(n);
+                            string esadecimali = ConvertiEsadecimale(n);
+                            <tr>
+                                <td>@n</td>
+                                <td>@binari</td>
+                                <td>@esadecimali</td>
+                                <td>@romani</td>
+                            </tr>
+                        }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+</main>

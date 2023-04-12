@@ -1,0 +1,15 @@
+C:\Users\icesa\Desktop\ProvaCarte\bin\Debug\net7.0\ProvaCarte.exe
+C:\Users\icesa\Desktop\ProvaCarte\bin\Debug\net7.0\ProvaCarte.deps.json
+C:\Users\icesa\Desktop\ProvaCarte\bin\Debug\net7.0\ProvaCarte.runtimeconfig.json
+C:\Users\icesa\Desktop\ProvaCarte\bin\Debug\net7.0\ProvaCarte.dll
+C:\Users\icesa\Desktop\ProvaCarte\bin\Debug\net7.0\ProvaCarte.pdb
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.csproj.AssemblyReference.cache
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.AssemblyInfoInputs.cache
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.AssemblyInfo.cs
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.csproj.CoreCompileInputs.cache
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.dll
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\refint\ProvaCarte.dll
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.pdb
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.genruntimeconfig.cache
+C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ref\ProvaCarte.dll

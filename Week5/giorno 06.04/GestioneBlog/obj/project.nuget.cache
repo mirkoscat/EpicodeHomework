@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1NYSxOxxHXZc7s8WEs2sMQanZV2tsYGQNCjMTI7i0PNnRTJS862dkF2kCqXv5KoES1Xqsi47fFmwEhgBRmKwdg==",
+  "dgSpecHash": "GPENmgRBf8LpwESluRO3YBWXmKHYVR5Z2rv6mgBDaQx4awSaRY/yRTK6bW59nrGUu3qYKKMrjNIaBhPtUnbDKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\GestioneBlog\\GestioneBlog.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week5\\giorno 06.04\\GestioneBlog\\GestioneBlog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -1,0 +1,17 @@
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.csproj.AssemblyReference.cache
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.AssemblyInfoInputs.cache
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.AssemblyInfo.cs
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.csproj.CoreCompileInputs.cache
+C:\Users\icesa\Desktop\ListaComuni\bin\Debug\net7.0\ListaComuni.exe
+C:\Users\icesa\Desktop\ListaComuni\bin\Debug\net7.0\ListaComuni.deps.json
+C:\Users\icesa\Desktop\ListaComuni\bin\Debug\net7.0\ListaComuni.runtimeconfig.json
+C:\Users\icesa\Desktop\ListaComuni\bin\Debug\net7.0\ListaComuni.dll
+C:\Users\icesa\Desktop\ListaComuni\bin\Debug\net7.0\ListaComuni.pdb
+C:\Users\icesa\Desktop\ListaComuni\bin\Debug\net7.0\CsvHelper.dll
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.csproj.CopyComplete
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.dll
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\refint\ListaComuni.dll
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.pdb
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.genruntimeconfig.cache
+C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ref\ListaComuni.dll
