@@ -3,14 +3,7 @@
 namespace ProvaCarte
 {
     internal class Program
-    {//devo gestire un mazzo di carte, ogni carta ha un valore e un seme
-        //si crea la classe carta con le due proprietà
-        //si crea la classe mazzo con un con IEnumerator di tipo carta
-        //si crea la classe giocatore con un mazzo di carte
-        //per creare il mazzo si crea un metodo che crea un mazzo di carte
-        //delego il giocatore per creare un mazzo di carte?
-        //si crea un metodo che mischia il mazzo
-        //si crea un metodo che distribuisce le carte. si ha in input il mazzo mischiato e la quantità di carte da distribuire. il return sarà una lista di carte
+    {
         class Carte
         {
             public int Valore { get; set; }
