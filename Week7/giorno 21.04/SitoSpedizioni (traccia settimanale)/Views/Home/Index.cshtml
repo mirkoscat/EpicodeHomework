@@ -1,0 +1,170 @@
+﻿@model IEnumerable<SitoSpedizioni.Models.AggiornamentoSpedizioneViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <!--sezione form start-->
+    <div class="container">
+        <!--form dove inserisco il codice fiscale-->
+        <div class="row  bg-info mb-3">
+            <div class="col-6">
+                <form class="pt-3" id="ListIdAsync" method="post">
+                    <label for="FiscIva">Inserisci codisce fiscale o partita iva:</label>
+                    <input for="FiscIva" />
+                    <label class="pt-3" for="CodSped">Inserisci il codice della spedizione:</label>
+                    <input for="CodSped" />
+                </form>
+
+                <a id="ListIdAsync" href="#" class="btn btn-warning">Prova Async</a>
+
+            </div>
+            <div class="col-6">
+                <p>Elenco Spedizioni. Questa colonna deve essere asincrona</p>
+                <!--se l'ordine è presente visualizzare luogoditransito oratransito, importando il model aggiornamentospedizione'-->
+                <table class="table table-info">
+                    <thead>
+                        <tr>
+                            <th>Luogo</th>
+                            <th>Ora</th>
+                            <th>Descrizione</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td>Hub Point 5</td>
+                            <td>08:50</td>
+                            <td>Il pacco è partito</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--sezione form end-->
+        <div class="container">
+            <img src="https://www.valledaostaglocal.it/fileadmin/archivio/valledaostaglocal/pacchi_01.jpg" style="height:400px;" class="w-100" alt="img1">
+            <div class=" bg-warning">
+                <h5 class="text-dark">Spedizioni in tempi record</h5>
+            </div>
+        </div>
+        <!--sezione carosellofeedback start-->
+        <div id="carouselExample" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active row d-flex text-center">
+                    <div class="col-4 ">
+                        <img style="width:100px;height:100px;" src="https://st4.depositphotos.com/4329009/19956/v/450/depositphotos_199564354-stock-illustration-creative-vector-illustration-of-default.jpg" alt="...">
+                        <p>Nome1</p>
+                        <p>Recensione1</p>
+                    </div> <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://t3.ftcdn.net/jpg/02/33/46/24/360_F_233462402_Fx1yke4ng4GA8TJikJZoiATrkncvW6Ib.jpg" alt="...">
+                        <p>Nome2</p>
+                        <p>Recensione2</p>
+                    </div> <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=" alt="...">
+                        <p>Nome3</p>
+                        <p>Recensione3</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item  row d-flex  text-center">
+                    <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXxkkWli0X-_Sf_5DegQVdkprLi8jbRvYtHGt6nLufcRozbTUo2S513_sPBAFxkHs_Pc&usqp=CAU" alt="...">
+                        <p>Nome4</p>
+                        <p>Recension4e</p>
+                    </div> <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://t3.ftcdn.net/jpg/02/33/46/24/360_F_233462402_Fx1yke4ng4GA8TJikJZoiATrkncvW6Ib.jpg" alt="...">
+                        <p>Nome5</p>
+                        <p>Recensione5</p>
+                    </div> <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://st4.depositphotos.com/4329009/19956/v/450/depositphotos_199564354-stock-illustration-creative-vector-illustration-of-default.jpg" alt="...">
+                        <p>Nome6</p>
+                        <p>Recensione6</p>
+                    </div>
+
+                </div> <div class="carousel-item  row d-flex  text-center">
+                    <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://st4.depositphotos.com/4329009/19956/v/450/depositphotos_199564354-stock-illustration-creative-vector-illustration-of-default.jpg" alt="...">
+                        <p>Nome7</p>
+                        <p>Recensione7</p>
+                    </div> <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://st4.depositphotos.com/4329009/19956/v/450/depositphotos_199564354-stock-illustration-creative-vector-illustration-of-default.jpg" alt="...">
+                        <p>Nome8</p>
+                        <p>Recensione8</p>
+                    </div> <div class="col-4">
+                        <img style="width:100px;height:100px;" src="https://st4.depositphotos.com/4329009/19956/v/450/depositphotos_199564354-stock-illustration-creative-vector-illustration-of-default.jpg" alt="...">
+                        <p>Nome9</p>
+                        <p>Recensione9</p>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+
+                <i class="bi bi-arrow-bar-left text-dark"></i>
+
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                <i class="bi bi-arrow-bar-right text-dark"></i>
+
+            </button>
+        </div>
+        <!--sezione carosellofeedback end-->
+
+</main>
+@section Scripts{
+
+    <script type="text/javascript">
+        $(function () {
+            $('#ListIdAsync').click(function () {
+                console.log("prima")
+                $.ajax({
+                    url: '/Spedizioni/VerificaSpedizioneAsync',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        $.each(data, function (i) {
+                            $('#tbody').append('<tr><td>' + data[i].LuogoDiTransito + '</td><td>' + data[i].OraDiTransito + '</td><td>' + data[i].DescrizioneDiTransito + '</td></tr>')
+                        });
+
+                    }
+                })
+                // $('#ListIdAsync').hide();
+
+
+            })
+        })
+    </script>
+}
+@*<script>
+            window.onload = function () {
+                var url = '@Url.Action("VerificaSpedizioneAsync", "Spedizioni")';
+                var button = document.getElementById("ListIdAsync");
+                button.addEventListener("click", function () {
+                    var http = new XMLHttpRequest();//creo e apro canale di comunicazione
+                    http.open("get", url);
+                    http.onreadystatechange = function () {
+                        if (http.readyState == 4) {
+                            var responseStr = http.responseText;
+                            var array = JSON.parse(responseStr);
+                            var tbody = document.getElementById("tbody");
+                            /*ul.innerHTML=""*/
+                            for (var i of array) {
+                                var tr = document.createElement("tr");
+                                tr.innerHTML = "<td>" + i.LuogoDiTransito + '</td><td>' + i.OraDiTransito + '</td><td>' + i.DescrizioneDiTransito + '</td></tr>';
+                                tbody.appendChild(tr);
+                            }
+                        }
+                    }
+                    http.send();
+                })
+            }
+    </script>
+
+
+*@
+
+

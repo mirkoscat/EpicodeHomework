@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SitoSpedizioni.Models.Anagrafe>
+
+
+@{
+    ViewBag.Title = "Lista Anagrafiche";
+}
+
+<h2>Lista Anagrafiche</h2>
+
+<dl>
+    <dd>
+        @Html.ActionLink("Create New", "CreaAnagrafica"," ",new {@class="btn btn-primary" })
+    </dd>
+</dl>
+    
+
+
+
+<div class="row">
+    @if (Model.Any())
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                    <th> @Html.DisplayNameFor(model => model.Cognome)</th>
+                    <th> @Html.DisplayNameFor(model => model.CodiceFiscale)</th>
+                    <th> @Html.DisplayNameFor(model => model.PartitaIva)</th>
+                </tr>
+            </thead>
+            @foreach (var t in Model)
+            {
+                <tr>
+                    <td>
+                        @t.Nome
+                    </td>
+                    <td>
+                        @t.Cognome
+                    </td>
+                    <td>
+                        @t.CodiceFiscale
+                    </td>
+                    <td>
+                        @t.PartitaIva
+                    </td>
+                    <td>
+                        @Html.ActionLink("Modifica", "EditAnagrafica", new { id = t.IDanagrafe }, new { @class = "btn btn-success" })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Cancella", "CancellaAnagrafica", new { id = t.IDanagrafe }, new { @class = "btn btn-danger" })
+                   
+                    </td>
+                </tr>
+            }
+
+        </table>
+    }
+    else
+    {
+        <p class="mt-2 offset-2 col-8 alert alert-danger">Nessuna attività in archivio.</p>
+    }
+</div>

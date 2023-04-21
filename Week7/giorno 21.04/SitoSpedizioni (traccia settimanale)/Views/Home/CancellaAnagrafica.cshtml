@@ -1,0 +1,81 @@
+﻿@model SitoSpedizioni.Models.Anagrafe
+
+@{
+    ViewBag.Title = "CancellaAnagrafica";
+}
+
+<h2>CancellaAnagrafica</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Anagrafe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDanagrafe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDanagrafe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cognome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cognome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Is_privato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Is_privato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Indirizzo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Indirizzo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodiceFiscale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodiceFiscale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PartitaIva)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartitaIva)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.IDanagrafe)
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "ListAnagrafica", " ", new { @class = "btn btn-info" })
+        </div>
+    }
+</div>

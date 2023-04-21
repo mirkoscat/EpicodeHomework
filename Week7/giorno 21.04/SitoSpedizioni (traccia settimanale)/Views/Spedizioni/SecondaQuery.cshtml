@@ -1,0 +1,24 @@
+﻿@model IEnumerable<IGrouping<String, SitoSpedizioni.Models.Spedizioni>>
+@{
+    ViewBag.Title = "SecondaQuery";
+}
+<h2>Conoscere il numero totale delle spedizioni memorizzate raggruppate per città destinataria</h2>
+
+
+<p></p>
+<table>
+    <thead>
+    <th>Città:</th>
+    <th>Conteggio: </th>
+    </thead>
+    <tbody>
+
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td> @i.Key </td>
+                <td class="text-center"> @i.Count() </td>
+            </tr>
+        }
+    </tbody>
+</table>

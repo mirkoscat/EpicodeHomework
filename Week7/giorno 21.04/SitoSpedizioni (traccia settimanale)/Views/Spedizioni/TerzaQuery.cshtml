@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SitoSpedizioni.Models.Spedizioni>
+
+@{
+    ViewBag.Title = "TerzaQuery";
+}
+
+<h2>spedizioni totali in attesa consegna: @Model.Count()</h2>
+
+
+
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDspedizione)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CittaDestinataria)
+        </th>
+        <th>
+            Conteggio:
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDspedizione)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.CittaDestinataria)
+        </td>
+        <th>
+            @Model.Count()
+        </th>
+       
+    </tr>
+}
+
+</table>*@

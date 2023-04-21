@@ -1,0 +1,89 @@
+﻿@model SitoSpedizioni.Models.Spedizioni
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Spedizioni</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDspedizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDspedizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataSpedizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataSpedizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CittaDestinataria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CittaDestinataria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPrevistaArrivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPrevistaArrivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDanagrafe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDanagrafe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+   
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("DeletePress","Spedizioni", new { id=Model.IDspedizione})'">clicca</button>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+    }
+</div>

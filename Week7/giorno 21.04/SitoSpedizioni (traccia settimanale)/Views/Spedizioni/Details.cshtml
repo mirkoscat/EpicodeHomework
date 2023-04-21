@@ -1,0 +1,59 @@
+﻿@model SitoSpedizioni.Models.Spedizioni
+
+@{
+    ViewBag.Title = "DetailsSpedizione";
+}
+
+<h2>DetailsSpedizione</h2>
+
+<div>
+    <h4>Spedizione</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDspedizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDspedizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataSpedizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataSpedizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CittaDestinataria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CittaDestinataria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPrevistaArrivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPrevistaArrivo)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit","Spedizioni", new { id = Model.IDspedizione }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

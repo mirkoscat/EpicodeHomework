@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SitoSpedizioni.Models.Spedizioni>
+
+@{ DateTime oggi=DateTime.Now; 
+    ViewBag.Title = "PrimaQuery";
+}
+
+<h2>ViewBag.Title</h2>
+<h2>Spedizioni in consegna oggi @oggi</h2>
+
+<p>
+    @Html.ActionLink("Indietro", "Index", "Spedizioni")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDspedizione)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataSpedizione)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CittaDestinataria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataPrevistaArrivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDanagrafe)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDspedizione)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataSpedizione)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CittaDestinataria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataPrevistaArrivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDanagrafe)
+        </td>
+        <td>
+            @( (SitoSpedizioni.Models.Entities.StatoSpedizione ) item.Status )
+        </td>
+      
+     
+    </tr>
+}
+
+</table>
