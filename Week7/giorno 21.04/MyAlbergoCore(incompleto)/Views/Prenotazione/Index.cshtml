@@ -1,0 +1,79 @@
+﻿@model IEnumerable<GestioneAlbergo.Models.Entities.Prenotazione>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPrenotazione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataPrenotazione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InizioSoggiorno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FineSoggiorno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CaparraIniziale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tariffa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCamera)
+            </th>
+          
+            <th>
+                @Html.DisplayNameFor(model => model.AltriDettagli)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPrenotazione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataPrenotazione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InizioSoggiorno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FineSoggiorno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaparraIniziale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tariffa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCamera)
+            </td>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.AltriDettagli)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
