@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Ecommerce.Models.Entities.CarrelloProdotto>
+
+@{
+    
+  
+    ViewData["Title"] = "Details";
+}
+
+<h1>Dettagli carrello n: @ViewBag.Id</h1> 
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Prodotto.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantita)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prodotto.Prezzo)
+            </th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prodotto.Nome)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Quantita)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Prodotto.Prezzo)
+            </td>
+               
+            
+        </tr>
+}
+    </tbody>
+</table>
+@if(Model.Count() > 0)
+{
+	<h3>Importo Totale: @Model.Sum(x => x.Quantita * x.Prodotto.Prezzo)</h3>
+}
+else
+{
+	<h3>Importo Totale: 0</h3>
+}
+

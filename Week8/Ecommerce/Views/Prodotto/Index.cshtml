@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Ecommerce.Models.Entities.Prodotto>
+
+@{
+    ViewData["Title"] = "ListProdotti";
+}
+
+<h1>ListProdotti</h1>
+
+<p>
+    <a asp-action="Create" asp-controller="Prodotto">Create New</a>
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProdotto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Immagine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prezzo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrizione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescrAggiuntiva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InStock)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProdotto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Immagine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prezzo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descrizione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescrAggiuntiva)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InStock )
+                </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.IdProdotto },new{@class="btn btn-info"}) |
+
+                    @Html.ActionLink("Delete", "Delete", new {  id=item.IdProdotto  },new{@class="btn btn-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

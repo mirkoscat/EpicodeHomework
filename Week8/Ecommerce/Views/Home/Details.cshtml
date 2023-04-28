@@ -1,0 +1,44 @@
+﻿@model Ecommerce.Models.Entities.Prodotto
+
+@{
+	int quantita=1;
+}
+
+<h1>Details</h1>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<img style="width:280px;height:260px;" src="@Url.Content(Model.Immagine)" />
+		</div>
+		<div class="col">
+			<dl>
+				<dd>
+					@Html.DisplayFor(model => model.Nome)
+				</dd>
+				<dd>
+					@Html.DisplayFor(model => model.Prezzo)
+				</dd>
+				<dd>
+					@Html.DisplayFor(model => model.Descrizione)
+				</dd>
+				<dd>
+					<form asp-controller="Home" asp-action="AddToCart">
+						<input type="hidden" asp-for="IdProdotto" />
+						<input type="number" value="@quantita" name="quantita" />
+						<button class="btn btn-primary">Aggiungi al carrello</button>
+					</form>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			@Html.DisplayFor(model => model.DescrAggiuntiva)
+		</div>
+	</div>
+
+</div>
+<div>
+
+	<a asp-action="Index">Back to List</a>
+</div>
