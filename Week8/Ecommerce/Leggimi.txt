@@ -1,0 +1,17 @@
+Non c'è una parte amministrativa in quanto ho avuto problemi di login con il database degli utenti, quindi non ho utilizzato le corrette annotazioni.
+Inoltre al momento manca il punto 3.
+
+
+Traccia Build Week:
+"L’applicazione web deve prevedere:
+– Una pagina iniziale nella quale vengono elencati i prodotti in vendita, una immagine per ciascuno ed il prezzo oltre ad un pulsante che provveda a reindirizzare l’utente nella relativa pagina di dettaglio,
+– Una pagina di dettaglio che preveda:
+1) La possibilità di leggere i dettagli del prodotto,
+2) La possibilità di leggere una descrizione aggiuntiva ed il prezzo,
+3) La possibilità di poter scegliere la quantità da acquistare.
+Un pulsante provvederà a inserire l’articolo (con le relative quantità) in un carrello.
+– Una pagina che fungerà da carrello con l’elenco dei prodotti ivi contenuti,
+– Una parte amministrativa accessibile esclusivamente all’amministratore del sito, presso la quale si potrà:
+b) Ispezionare una griglia contenente i vari prodotti in vendita
+c) L’opportunità di modificare i dati di un determinato prodotto.
+"
