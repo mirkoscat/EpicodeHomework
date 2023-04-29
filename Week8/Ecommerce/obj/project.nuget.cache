@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xscdasI7o9sNKLBIG8r3FN8kxq1oejqtgM6ILKe4qzdjF5rXuPuSx68OKBHJ9+qYTmfpSDVigXL2NIS3kte7eQ==",
+  "dgSpecHash": "yJQxU8oSJ4ZU6vwZYYdfTC3B2/5CcVFu1oVd8wLnnalJtmAcfM0YJ1EU2Ld5JgUujpDlYG7lkhp1MUmqP9vs2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\Ecommerce\\Ecommerce.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week8\\Ecommerce\\Ecommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

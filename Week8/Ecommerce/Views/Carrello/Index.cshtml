@@ -33,13 +33,11 @@
             </td>
                 <td>
                     <input type="hidden" name="id-carrello-prodotto" value="@item.IdCarrelloProdotto" />
+                    <button class="diminuisci-quantita btn btn-danger">-</button>
                     <span class="quantita">@item.Quantita</span>
-                  @*  <button id="diminuisci-quantita" class="btn btn-danger">-</button>
-                    <button id="aumenta-quantita" class="btn btn-success">+</button>  *@
-                </td>
-
-
-            
+                    <button class="aumenta-quantita btn btn-info">+</button>
+                    <button class="cambia-quantita btn-success">Cambia Quantità</button>  @*onClick="alert('Quantità cambiata')"*@
+                </td>  
         </tr>
 }
     </tbody>
@@ -51,5 +49,35 @@
 else
 {
     <h3>Importo Totale: 0</h3>
+}
+
+@section Scripts {
+
+    <script>
+        //aggiungo un event listener a tutti i bottoni con classe "aumenta-quantita"
+        var aumentaQuantitaBtns = document.querySelectorAll('.aumenta-quantita');
+        aumentaQuantitaBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                var quantita = btn.parentNode.querySelector('.quantita');
+                var nuovaQuantita = parseInt(quantita.innerHTML) + 1;
+                if (nuovaQuantita <= 10) {
+                    quantita.innerHTML = nuovaQuantita;
+                }
+            });
+        });
+
+        //aggiungo un event listener a tutti i bottoni con classe "diminuisci-quantita"
+        var diminuisciQuantitaBtns = document.querySelectorAll('.diminuisci-quantita');
+        diminuisciQuantitaBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                var quantita = btn.parentNode.querySelector('.quantita');
+                var nuovaQuantita = parseInt(quantita.innerHTML) - 1;
+                if (nuovaQuantita >= 1) {
+                    quantita.innerHTML = nuovaQuantita;
+                }
+            });
+        });
+
+    </script>
 }
 

@@ -11061,11 +11061,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\icesa\\Desktop\\Ecommerce\\Ecommerce.csproj",
+      "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week8\\Ecommerce\\Ecommerce.csproj",
       "projectName": "Ecommerce",
-      "projectPath": "C:\\Users\\icesa\\Desktop\\Ecommerce\\Ecommerce.csproj",
+      "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week8\\Ecommerce\\Ecommerce.csproj",
       "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\icesa\\Desktop\\Ecommerce\\obj\\",
+      "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week8\\Ecommerce\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
