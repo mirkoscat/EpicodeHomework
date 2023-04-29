@@ -1,0 +1,1 @@
+﻿UPDATE CarrelloProdotto SET Quantita = 0 + 66 WHERE IdCarrelloProdotto = 19 AND IdCarrello=1 AND IdProdotto=1

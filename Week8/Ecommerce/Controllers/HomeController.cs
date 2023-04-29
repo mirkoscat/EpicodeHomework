@@ -86,7 +86,7 @@ namespace Ecommerce.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult AddtoCart(Prodotto p, IFormCollection fields)
-        {//come paramentro prendo p.IdProdotto dallinput hidden e il formcollection che contiene i dati del form, in particolare la quantità
+        {//come parametro prendo p.IdProdotto dallinput hidden e il formcollection che contiene i dati del form, in particolare la quantità
             var idcarrello = _scart.GetIdCarrelloAttuale();
             var idprodotto = p.IdProdotto;
             _scart.AggiungiProdottoAlCarrello(idcarrello, idprodotto, int.Parse(fields["quantita"]));

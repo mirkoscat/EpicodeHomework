@@ -1,83 +1,97 @@
 ﻿@model IEnumerable<Ecommerce.Models.Entities.CarrelloProdotto>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
 
 
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Prodotto.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Prodotto.Prezzo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantita)
-            </th>
-          
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                    @Html.DisplayFor(modelItem => item.Prodotto.Nome)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.Prodotto.Prezzo)
-            </td>
-                <td>
-                    <input type="hidden" name="id-carrello-prodotto" value="@item.IdCarrelloProdotto" />
-                    <button class="diminuisci-quantita btn btn-danger">-</button>
-                    <span class="quantita">@item.Quantita</span>
-                    <button class="aumenta-quantita btn btn-info">+</button>
-                    <button class="cambia-quantita btn-success">Cambia Quantità</button>  @*onClick="alert('Quantità cambiata')"*@
-                </td>  
-        </tr>
-}
-    </tbody>
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Prodotto.Nome)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Prodotto.Prezzo)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Quantita)
+			</th>
+
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			if (item.Quantita > 0)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Prodotto.Nome)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Prodotto.Prezzo)
+					</td>
+
+					<td>
+						<input type="hidden" name="id-carrello-prodotto" value="@item.IdCarrelloProdotto" />
+						<button class="diminuisci-quantita btn btn-danger">-</button>
+						<span class="quantita">@item.Quantita</span>
+						<button class="aumenta-quantita btn btn-info">+</button>
+						<button class="cambia-quantita btn-success">Cambia Quantità</button>  @*onClick="alert('Quantità cambiata')"*@
+					</td>
+				</tr>
+			}
+			else
+			{
+				<h2>Prodotto eliminato</h2>
+			}
+		}
+	</tbody>
 </table>
 @if (Model.Count() > 0)
 {
-    <h3>Importo Totale: @Model.Sum(x => x.Quantita * x.Prodotto.Prezzo)</h3>
+	<h3>Importo Totale: @Model.Sum(x => x.Quantita * x.Prodotto.Prezzo)</h3>
 }
 else
 {
-    <h3>Importo Totale: 0</h3>
+	<h3>Importo Totale: 0</h3>
 }
 
 @section Scripts {
 
-    <script>
-        //aggiungo un event listener a tutti i bottoni con classe "aumenta-quantita"
-        var aumentaQuantitaBtns = document.querySelectorAll('.aumenta-quantita');
-        aumentaQuantitaBtns.forEach(btn => {
-            btn.addEventListener("click", () => {
-                var quantita = btn.parentNode.querySelector('.quantita');
-                var nuovaQuantita = parseInt(quantita.innerHTML) + 1;
-                if (nuovaQuantita <= 10) {
-                    quantita.innerHTML = nuovaQuantita;
-                }
-            });
-        });
 
-        //aggiungo un event listener a tutti i bottoni con classe "diminuisci-quantita"
-        var diminuisciQuantitaBtns = document.querySelectorAll('.diminuisci-quantita');
-        diminuisciQuantitaBtns.forEach(btn => {
-            btn.addEventListener("click", () => {
-                var quantita = btn.parentNode.querySelector('.quantita');
-                var nuovaQuantita = parseInt(quantita.innerHTML) - 1;
-                if (nuovaQuantita >= 1) {
-                    quantita.innerHTML = nuovaQuantita;
-                }
-            });
-        });
+	<script>
 
-    </script>
+		var aumentaQuantitaBtns = document.querySelectorAll('.aumenta-quantita');
+		aumentaQuantitaBtns.forEach(btn => {
+			btn.addEventListener("click", () => {
+				var quantita = btn.parentNode.querySelector('.quantita');
+				var nuovaQuantita = parseInt(quantita.innerHTML) + 1;
+				if (nuovaQuantita <= 10) {
+					quantita.innerHTML = nuovaQuantita;
+				}
+			});
+		});
+
+
+		var diminuisciQuantitaBtns = document.querySelectorAll('.diminuisci-quantita');
+		diminuisciQuantitaBtns.forEach(btn => {
+			btn.addEventListener("click", () => {
+				var quantita = btn.parentNode.querySelector('.quantita');
+				var nuovaQuantita = parseInt(quantita.innerHTML) - 1;
+				if (nuovaQuantita >= 0) {
+					quantita.innerHTML = nuovaQuantita;
+				}
+			});
+		});
+
+
+	</script>
+
+
 }
 

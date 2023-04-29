@@ -101,13 +101,6 @@ namespace Ecommerce.Services
             {
                 CreaCarrello();
                 idCarrello = GetIdCarrelloAttuale();
-                //var nuovoCarrelloCmd = connection.CreateCommand();
-                //nuovoCarrelloCmd.CommandText = "INSERT INTO Carrello (IsOpen, DataApertura) VALUES (@IsOpen, @DataApertura); SELECT SCOPE_IDENTITY();";
-                //nuovoCarrelloCmd.Parameters.AddWithValue("@IsOpen", true);
-                //nuovoCarrelloCmd.Parameters.AddWithValue("@DataApertura", DateTime.Now);
-                //connection.Open();
-                //idCarrello = Convert.ToInt32(nuovoCarrelloCmd.ExecuteScalar());
-                //connection.Close();
             }
 
             return idCarrello;
@@ -185,6 +178,21 @@ namespace Ecommerce.Services
             var nuovaquantita = (int)cmd.ExecuteScalar();
             return nuovaquantita;
         
+        }
+
+        public void ModificaQuantita( int idcarrelloprodotto, int idcarrello, int idprodotto, int quantita)
+        {
+            var cmd = connection.CreateCommand();
+            //query ok
+            cmd.CommandText = "UPDATE CarrelloProdotto SET Quantita = 0 + @quantita WHERE IdCarrelloProdotto = @idCarrelloProdotto AND IdCarrello=@idcarrello AND IdProdotto=@idprodotto";
+            cmd.Parameters.AddWithValue("@idCarrelloProdotto", idcarrelloprodotto);
+			cmd.Parameters.AddWithValue("@idcarrello", idcarrello);
+			cmd.Parameters.AddWithValue("@idprodotto", idprodotto);
+            cmd.Parameters.AddWithValue("@quantita", quantita);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            
         }
     }
 
