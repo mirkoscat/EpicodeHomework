@@ -10,9 +10,9 @@ namespace Ecommerce.Models.Entities
         [Key]
         public int IdCarrelloProdotto { get; set; }
         public int IdProdotto { get; set; }
-		public int IdCarrello { get; set; }
+        public int IdCarrello { get; set; }
 
-		[ForeignKey("IdCarrello")]
+        [ForeignKey("IdCarrello")]
         public  Carrello Carrello { get; set ; }
 
         [ForeignKey("IdProdotto")]

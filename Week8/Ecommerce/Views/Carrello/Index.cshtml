@@ -37,17 +37,25 @@
 					</td>
 
 					<td>
-						<input type="hidden" name="id-carrello-prodotto" value="@item.IdCarrelloProdotto" />
-						<button class="diminuisci-quantita btn btn-danger">-</button>
-						<span class="quantita">@item.Quantita</span>
-						<button class="aumenta-quantita btn btn-info">+</button>
-						<button class="cambia-quantita btn-success">Cambia Quantità</button>  @*onClick="alert('Quantità cambiata')"*@
+						<form asp-action="Index" asp-controller="Carrello" method="post">
+							<input type="hidden" name="id-carrello-prodotto" value="@item.IdCarrelloProdotto" />
+							<input type="hidden" name="id-prodotto" value="@item.IdProdotto" />
+							<input type="hidden" name="id-carrello" value="@item.IdCarrello" />
+							<input type="number" name="quantita" class="quantita" value="@item.Quantita" />
+							<button class="cambia-quantita btn-success">Cambia Quantità</button>
+						</form>
+
+						@*<input type="hidden" name="id-carrello-prodotto" value="@item.IdCarrelloProdotto" />
+				<button class="diminuisci-quantita btn btn-danger">-</button>
+				<span class="quantita">@item.Quantita</span>
+				<button class="aumenta-quantita btn btn-info">+</button>
+				<button class="cambia-quantita btn-success">Cambia Quantità</button>*@  @*onClick="alert('Quantità cambiata')"*@
 					</td>
 				</tr>
 			}
 			else
 			{
-				<h2>Prodotto eliminato</h2>
+				<tr><td>Prodotto eliminato</td></tr>
 			}
 		}
 	</tbody>

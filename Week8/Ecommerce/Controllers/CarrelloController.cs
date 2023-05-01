@@ -35,11 +35,16 @@ namespace Ecommerce.Controllers
         [HttpPost]
         public ActionResult Index(CarrelloProdotto p, IFormCollection form)
         {
-            var idcarrello = _scart.GetIdCarrelloAttuale();
+			//var idcarrello = _scart.GetIdCarrelloAttuale();
+			var idcarrello = p.IdCarrello;
             var idcarrelloprodotto = p.IdCarrelloProdotto;
-            //var idprodotto = p.Prodotto.IdProdotto; errore oggetto non istanziato
+            var idprodotto = p.IdProdotto;
+      
+            var quantita = int.Parse(form["quantita"]);
 
-            _scart.ModificaQuantita(idcarrelloprodotto, idcarrello, int.Parse(form["id-prodotto"]), int.Parse(form["quantita"]));
+			//var idprodotto = p.Prodotto.IdProdotto; errore oggetto non istanziato
+
+			_scart.ModificaQuantita(idcarrelloprodotto, idcarrello, idprodotto, quantita);
 
             return RedirectToAction(nameof(Index));
 

@@ -9,6 +9,8 @@ namespace Ecommerce.Services
         bool ModificaProdotto(Prodotto p);
         IEnumerable<Prodotto> GetAll();
 		Prodotto GetProdottoById(int id);
+
+		//int GetIdProdotto(string nome);
 		
 		
 	}

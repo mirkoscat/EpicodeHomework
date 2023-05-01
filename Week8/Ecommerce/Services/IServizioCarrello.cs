@@ -9,7 +9,7 @@ namespace Ecommerce.Services
         int GetIdCarrelloAttuale();
         void AggiungiProdottoAlCarrello(int idcarrello, int idprodotto,int quantita);
         List<Carrello> GetCarrelli();
-        void ModificaQuantita(int idcarrello, int idcarrelloprodotto, int idprodotto,int quantita);
+        void ModificaQuantita(int idcarrelloprodotto, int idcarrello, int idprodotto,int quantita);
         
 
         

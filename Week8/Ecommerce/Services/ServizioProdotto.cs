@@ -155,17 +155,19 @@ namespace Ecommerce.Services
 
         }
 
-        //public int GetIdProdotto()
-        //{
+  //      public int GetIdProdotto(string nome) { 
+        
+        
+  //          int idProdotto = 0;
+		//	connection.Open();
+		//	var prodCmd = connection.CreateCommand();
+		//	prodCmd.CommandText = "SELECT IdProdotto FROM Prodotto  where Nome= @prodotto";
+  //          prodCmd.Parameters.AddWithValue("@prodotto", nome);
+		//	idProdotto = (int)prodCmd.ExecuteScalar();
+		//	connection.Close();
+		//	return idProdotto;
+		
+		//}
 
-        //    int idProdotto = -1;
-        //    connection.Open();
-        //    var prodCmd = connection.CreateCommand();
-        //    prodCmd.CommandText = "SELECT MAX(IdProdotto) FROM Prodotto";
-        //    idProdotto = (int)prodCmd.ExecuteScalar();
-        //    connection.Close();
-        //    return idProdotto;
-
-        //}
     }
 }
