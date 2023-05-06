@@ -1,0 +1,50 @@
+﻿@model IEnumerable<PizzeriaWebApp.DataLayer.Product>
+
+
+@{
+
+    ViewBag.Title = "Home Page";
+}
+<main>
+    <section class="row bordo">
+        <h1 id="title">Pizzeria</h1>
+
+
+    </section>
+    
+
+        @if (Model.Any())
+        {
+
+            <div class="container">
+
+                @foreach (var product in Model)
+                {
+                 <div class="row">
+                     <div class="col-sm-12 col-md-6 col-lg-4">
+                         <img class="prod-img" src="@Url.Content(@product.Url)" alt="@product.Name">
+                     </div>
+                     <div class="col-sm-12 col-md-6 col-lg-4   ">
+                         <h5 class="card-title">@product.Name</h5>
+                         <p class="card-text pt-3">@product.Description</p>
+                         <p class="card-text pt-5">@product.Price</p>
+                         <br />
+                         <form action="/Home/AddToCart" method="POST" >
+                             <input name="qty" id="qty" />
+                             <input type="hidden" value="@product.Id" name="id" id="id" />
+                             <button type="submit" class="btn btn-primary">Aggiungi</button>
+                         </form>
+                     </div>
+                 </div>
+                }
+            </div>
+
+
+        }
+        else
+        {
+
+            <div class="alert alert-warning">Nessun prodotto disponibile</div>
+        }
+
+</main>

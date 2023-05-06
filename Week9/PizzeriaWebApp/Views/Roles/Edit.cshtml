@@ -1,0 +1,43 @@
+﻿@model PizzeriaWebApp.Models.RoleEditViewModel
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+<div class="row">
+    <h2>Assegnazione dei ruoli</h2>
+    <h3>Utente <span class="user-name">@Model.User.Name</span></h3>
+</div>
+<div class="row"><div class="col"><h4>Ruoli</h4></div></div>
+<div class="row mt-3">
+    <div class="col">
+        @foreach (var role in Model.Roles)
+        {
+            var c = Model.User.Roles.Contains(role) ? "is-in-role" : "";
+            <span class="role @c" title="clicca per modificare">@role</span>
+        }
+    </div>
+</div>
+@section Scripts{
+    <script>
+        $(function () { 
+            var tags = $("span.role") 
+            tags
+                .click( // implementa la gestione del click sui tag recuperati
+                    function () {
+                        var role = $(this).text() 
+                        if (role != "admin") {
+                            var url = `/Account/ToggleRole?id=@Model.User.Id&roleName=${role}`
+                            $.ajax({ // inizia una richiesta AJAX
+                                url: url, 
+                                type: 'get', 
+                                success: function () { 
+                                    location.reload() 
+                                }
+                            })
+                        }
+                    }
+                )
+        })
+    </script>
+}

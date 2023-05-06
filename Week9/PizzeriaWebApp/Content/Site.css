@@ -1,0 +1,49 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.user-name {
+    padding:2px 3px 2px 3px;
+    background-color:antiquewhite;
+    
+}
+.role {
+    padding:3px;
+    background-color:burlywood;
+    margin-left: 5px;
+    margin-right: 5px;
+    border:2px solid blue;
+
+}
+.is-in-role {
+    background-color:blue;
+    color:white;
+    border:2px solid blue;
+}
+.prod-img {
+    height:200px;
+width:200px;
+}
+.bordo {
+    background-color:antiquewhite;
+    border: 2px solid blue;
+}
+body  {
+    background-color:antiquewhite;
+}

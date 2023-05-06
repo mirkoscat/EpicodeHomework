@@ -1,0 +1,27 @@
+﻿@model PizzeriaWebApp.Models.RolesIndexviewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create","Roles")
+</p>
+<table class="table">
+    <tr>
+        <th>Utente</th>
+    </tr>
+
+@foreach (var item in Model.Users) {
+    <tr>
+        <td>@item.Name</td>
+        <td>
+            @Html.ActionLink("Ruoli", "Edit", new { id=item.Id },new { @class="btn btn-info" }) |
+          
+        </td>
+    </tr>
+}
+
+</table>

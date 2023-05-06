@@ -1,0 +1,55 @@
+﻿@model PizzeriaWebApp.DataLayer.ProductInCart
+@{
+    double tot = 0;
+    string indirizzo = "";
+    string note = "";
+
+}
+<div class="container">
+
+    <h1>Riepilogo</h1>
+    <div class="row">
+        <div class="col-3">
+            <h3>Nome</h3>
+        </div>
+        <div class="col-3">
+            <h3>Prezzo</h3>
+        </div>
+        <div class="col-3">
+            <h3>Quantità</h3>
+        </div>
+        <div class="col-3">
+            <h3>SubTotale</h3>
+        </div>
+    </div>
+    @foreach (var c in Model.ListProdotti)
+    {
+        double sub = (double)c.Product.Price * c.Quantity;
+        tot += sub;
+        <div class="row">
+            <div class="col-3">
+                <p>@c.Product.Name</p>
+            </div>
+            <div class="col-3">
+                <p>@c.Product.Price</p>
+            </div>
+            <div class="col-3">
+                <p>@c.Quantity</p>
+            </div>
+            <div class="col-3">
+                <p> @sub</p>
+            </div>
+        </div>
+    }
+
+
+</div>
+<p>Totale: @tot</p>
+
+<form action="/Home/CheckOut" method="POST">
+    <input type="text" placeholder="Indirizzo" value="@indirizzo" name="@indirizzo" id="@indirizzo" />
+    <br />
+    <input type="text" placeholder="Note" value="@note" name="@note" id="@note" />
+    <button type="submit" class="btn btn-primary">Checkout</button>
+</form>
+

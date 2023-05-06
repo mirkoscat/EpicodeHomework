@@ -1,0 +1,77 @@
+﻿@model PizzeriaWebApp.GestioneViewModel
+
+@{ var oggi = DateTime.Now.ToLocalTime().ToString();
+    ViewBag.Title = "Gestione";
+}
+
+<h2>Gestione</h2>
+
+<div class="col-2">
+    @Html.ActionLink("Aggiungi Ingrediente", "AddIngredient", null, new { @class = "btn btn-warning" })
+
+</div>
+<table class="table">
+    <tr>
+        <th>Nome Ingrediente</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Ingredient)
+    {
+        <tr>
+
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditIngredient", new { id = item.Id }) |
+
+                @Html.ActionLink("Delete", "DeleteIngredient", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="col-2">
+    @Html.ActionLink("Aggiungi Prodotto", "AddProduct", null, new { @class = "btn btn-warning" })
+
+</div>
+<table class="table">
+    <tr>
+        <th>Nome Prodotto</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Product)
+    {
+        <tr>
+
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditProduct", new { id = item.Id }) |
+                @Html.ActionLink("Details", "DetailsProduct", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "DeleteProduct", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="row">
+    <div class="col">
+        <p>Totale ordini evasi:</p>
+        <button>Click</button>
+        <ul id="firstquery">
+        </ul>
+    </div><div class="col">
+        <p>Scegli il giorno di cui mostrare l'incasso</p>
+        <button>Click</button>
+        <ul id="secondquery">
+        </ul>
+    </div>
+</div>
+
+
+
+

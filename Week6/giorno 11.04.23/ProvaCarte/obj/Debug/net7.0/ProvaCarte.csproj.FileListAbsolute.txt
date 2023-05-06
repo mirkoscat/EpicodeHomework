@@ -13,3 +13,18 @@ C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\refint\ProvaCarte.dll
 C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.pdb
 C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ProvaCarte.genruntimeconfig.cache
 C:\Users\icesa\Desktop\ProvaCarte\obj\Debug\net7.0\ref\ProvaCarte.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\bin\Debug\net7.0\ProvaCarte.exe
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\bin\Debug\net7.0\ProvaCarte.deps.json
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\bin\Debug\net7.0\ProvaCarte.runtimeconfig.json
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\bin\Debug\net7.0\ProvaCarte.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\bin\Debug\net7.0\ProvaCarte.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.AssemblyInfo.cs
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\refint\ProvaCarte.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ProvaCarte.genruntimeconfig.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ProvaCarte\obj\Debug\net7.0\ref\ProvaCarte.dll
