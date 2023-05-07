@@ -32,8 +32,8 @@
                                 <tr><td class="table-warning radius">@product.Description</td></tr>
                             </table>
                            
-                            <form action="/Home/AddToCart" method="POST">
-                                <input name="qty" type="number" id="qty" />
+                            <form action="/Carrello/AddToCart" method="POST">
+                                <input name="qty" type="number" id="qty" min="1" />
                                 <input type="hidden" value="@product.Id" name="id" id="id" />
                                 <button type="submit" class="btn btn-success">Aggiungi</button>
                             </form>
@@ -51,19 +51,3 @@
     }
 
 </main>
-@* <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <img class="prod-img" src="@Url.Content(@product.Url)" alt="@product.Name">
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4   ">
-            <h5 class="card-title">@product.Name</h5>
-            <p class="card-text pt-3">@product.Description</p>
-            <p class="card-text pt-5">@product.Price</p>
-            <br />
-            <form action="/Home/AddToCart" method="POST" >
-                <input name="qty" id="qty" />
-                <input type="hidden" value="@product.Id" name="id" id="id" />
-                <button type="submit" class="btn btn-primary">Aggiungi</button>
-            </form>
-        </div>
-    </div> *@

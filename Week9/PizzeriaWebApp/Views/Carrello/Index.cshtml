@@ -31,7 +31,7 @@
                     <td>
                         <form action="/Carrello/UpdateQuantity" method="POST">
                             <input type="hidden" name="id" value="@i.Product.Id" id="id" />
-                            <input type="number" placeholder="@i.Quantity" value="@i.Quantity" id="qty" name="qty" />
+                            <input type="number" placeholder="@i.Quantity" value="@i.Quantity" id="qty" name="qty" min="0" />
                             <button type="submit" class="btn btn-success">Aggiorna</button>
                         </form>
 
@@ -46,5 +46,9 @@
     </table>
     <p>Prezzo Totale: @totcart</p>
     <form action="/Carrello/CheckOut" method="POST">
+      
+        <input required placeholder="Indirizzo:"  name="indirizzo" id="indirizzo"/>
+        <input placeholder="Note:" name="note" id="note"/>
+        <button type="submit" class="btn btn-success">Checkout</button>
     </form>
 </div>

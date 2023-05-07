@@ -26,6 +26,7 @@ namespace PizzeriaWebApp.DataLayer
 		public DateTime OrderDate { get; set; }
 		///<summary>lista prodottinelcarrello in ordini</summary>
 		public List<ProductInCart> ProdottiInCarrello { get; set; } = new List<ProductInCart>();
+		public Cart Cart { get; set; }
 
 
 

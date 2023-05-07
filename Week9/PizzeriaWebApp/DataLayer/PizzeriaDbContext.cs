@@ -17,6 +17,7 @@ namespace PizzeriaWebApp.DataLayer
 		public DbSet<ProductInCart> ProductsInCart { get; set; }
 	
 		public DbSet<Ingredient> Ingredients { get; set; }
+		public DbSet<Order> Orders { get; set; }
 
 	}
 

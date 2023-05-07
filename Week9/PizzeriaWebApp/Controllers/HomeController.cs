@@ -133,49 +133,34 @@ namespace PizzeriaWebApp.Controllers
 			_dbcontext.SaveChanges();
 			return RedirectToAction("Index");
 		}
-		[Authorize]
-		public ActionResult AddToCart(long id, int qty) {
-
-			return Json(true, JsonRequestBehavior.AllowGet);
-		}
-		[HttpPost]
-		[Authorize]
-
-		public ActionResult AddToCart(FormCollection form)
+		[Authorize(Roles = "admin")]
+		public ActionResult Ordini()
 		{
-			var cart=_dbcontext.Carts.FirstOrDefault(x=>x.Username==User.Identity.Name);
-			
-			if (cart == null) { 
-				cart= new Cart();
-				cart.Username = User.Identity.Name;
-				_dbcontext.Carts.Add(cart);
-				_dbcontext.SaveChanges();
-			}
-			
-			var quantity = int.Parse(form["qty"]);
-			var id= long.Parse(form["id"]);
-			
-			var product = _dbcontext.Products.FirstOrDefault(x => x.Id == id);
-			var productInCart = _dbcontext.ProductsInCart.FirstOrDefault(x => x.Id == id);
-
-			if (productInCart == null)
+			var ordini = _dbcontext.Orders.ToList();
+			return View(ordini);
+		}
+		[Authorize(Roles = "admin")]
+		[HttpPost]
+		public ActionResult UpdateStatus(FormCollection form)
+		{
+			int id= int.Parse(form["id"]);
+			var status = form["status"].ToLower();
+			var ordine = _dbcontext.Orders.FirstOrDefault(x => x.Id == id);
+			if (status== "evaso")
 			{
-				var newItem = new ProductInCart
-				{	Cart=cart,
-					Product = product,
-					Quantity =  quantity
-				};
-				_dbcontext.ProductsInCart.Add(newItem);
+				ordine.Evaso = true;
 			}
 			else
 			{
-				productInCart.Quantity+=quantity;
-			}
+				ordine.Evaso = false;
+			}		
+			
 			_dbcontext.SaveChanges();
-			return RedirectToAction(nameof(Index));
+		
+			return RedirectToAction(nameof(Ordini));
+
 		}
 
-		
 
 		//INGREDIENTI CRUD
 		[Authorize(Roles = "admin")]
@@ -188,13 +173,11 @@ namespace PizzeriaWebApp.Controllers
 		[Authorize(Roles = "admin")]
 		public ActionResult AddIngredient(Ingredient i)
 		{
-			//if (ModelState.IsValid)
-			//{
+			
 				_dbcontext.Ingredients.Add(i);
 				_dbcontext.SaveChanges();
 				return RedirectToAction(nameof(Gestione));
-			//}
-			//return View(i);
+			
 		}
 		[Authorize(Roles = "admin")]
 		public ActionResult EditIngredient(int id)

@@ -26,13 +26,13 @@
 
                     @if (User.IsInRole("admin"))
 
-                    {
+                    {   <li>@Html.ActionLink("Ordini", "Ordini", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                         <li>@Html.ActionLink("Admin", "Gestione", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                         @*<li>@Html.ActionLink("Ruoli", "Index", "Roles", new { area = "" }, new { @class = "nav-link" })</li>*@
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")
-                </dixv>
+                </div>
             </div>
     </nav>
     <div class="container body-content">

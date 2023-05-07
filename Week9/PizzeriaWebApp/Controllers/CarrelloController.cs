@@ -29,8 +29,57 @@ namespace PizzeriaWebApp.Controllers
 			};
 			return View(model);
 		}
+
 		
-	
+		public ActionResult AddToCart(long id, int qty)
+		{
+
+			return Json(true, JsonRequestBehavior.AllowGet);
+		}
+		[HttpPost]
+		
+
+		public ActionResult AddToCart(FormCollection form)
+		{
+			var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
+
+			if (cart == null)
+			{
+				cart = new Cart();
+				cart.Username = User.Identity.Name;
+				_dbcontext.Carts.Add(cart);
+				_dbcontext.SaveChanges();
+			}
+
+			var quantity = int.Parse(form["qty"]);
+			var id = long.Parse(form["id"]);
+
+			var product = _dbcontext.Products.FirstOrDefault(x => x.Id == id);
+			var productInCart = _dbcontext.ProductsInCart.FirstOrDefault(x => x.Id == id);
+
+			if (productInCart == null)
+			{
+				var newItem = new ProductInCart
+				{
+					Cart = cart,
+					Product = product,
+					Quantity = quantity
+				};
+				_dbcontext.ProductsInCart.Add(newItem);
+			}
+			else
+			{
+				productInCart.Quantity += quantity;
+			}
+			_dbcontext.SaveChanges();
+			return RedirectToAction(nameof(HomeController.Index));
+		}
+		
+		public ActionResult UpdateQuantity(long id, int qty)
+		{
+
+			return Json(true, JsonRequestBehavior.AllowGet);
+		}
 		[HttpPost]
 		public ActionResult UpdateQuantity(FormCollection form)
 		{
@@ -41,6 +90,36 @@ namespace PizzeriaWebApp.Controllers
 			productInCart.Quantity = qty;
 			_dbcontext.SaveChanges();
 			return RedirectToAction(nameof(Index));
+		}
+
+		
+		public ActionResult Checkout(string note,string indirizzo)
+		{
+
+			return Json(true, JsonRequestBehavior.AllowGet);
+		}
+		[HttpPost]
+		public ActionResult CheckOut(FormCollection form)
+		{
+			var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
+			var order = new Order();
+			var note = form["note"];
+			var indirizzo = form["indirizzo"];
+			order.AdditionalNote = note;
+			order.Address = indirizzo;
+			order.OrderDate = System.DateTime.Now;
+			order.Evaso = false;
+			order.Cart = cart;
+			
+			foreach (var p in cart.ListaProdotti)
+			{
+				order.ProdottiInCarrello.Add(p);
+			}
+			cart.ListaProdotti.Clear();
+			_dbcontext.Orders.Add(order);
+			_dbcontext.SaveChanges();
+			return RedirectToAction(nameof(HomeController.Index));
+
 		}
 
 

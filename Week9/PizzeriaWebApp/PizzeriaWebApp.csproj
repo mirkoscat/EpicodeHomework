@@ -212,6 +212,14 @@
     <Compile Include="Migrations\202305061055094_order.designer.cs">
       <DependentUpon>202305061055094_order.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305071607507_m6.cs" />
+    <Compile Include="Migrations\202305071607507_m6.designer.cs">
+      <DependentUpon>202305071607507_m6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305071627560_m7.cs" />
+    <Compile Include="Migrations\202305071627560_m7.designer.cs">
+      <DependentUpon>202305071627560_m7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AddProductModel.cs" />
@@ -302,6 +310,7 @@
     <Content Include="Views\Roles\Index.cshtml" />
     <Content Include="Views\Roles\Edit.cshtml" />
     <Content Include="Views\Carrello\Index.cshtml" />
+    <Content Include="Views\Home\Ordini.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -355,6 +364,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305061055094_order.resx">
       <DependentUpon>202305061055094_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305071607507_m6.resx">
+      <DependentUpon>202305071607507_m6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305071627560_m7.resx">
+      <DependentUpon>202305071627560_m7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

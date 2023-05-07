@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PizzeriaWebApp.DataLayer.Order>
+
+@{ var count = Model.Where(m => m.Evaso == true).Count();
+
+    ViewBag.Title = "Ordini";
+}
+
+<h2>Ordini</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdditionalNote)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Evaso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (item.Evaso == false)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdditionalNote)
+                </td>
+                <td>
+                    <form action="/Home/UpdateStatus" method="POST">
+                        <input type="hidden" name="id" value="@item.Id" />
+                     
+                        <input type="text" name="status" />
+                        <button type="submit" class="btn btn-success">Aggiorna</button>
+                    </form>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+
+            </tr>
+        }
+    }
+
+</table>
+<p>Ordini evasi: @count</p>
