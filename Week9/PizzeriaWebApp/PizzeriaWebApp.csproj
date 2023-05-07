@@ -171,6 +171,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CarrelloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -217,7 +218,7 @@
     <Compile Include="Models\GestioneViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\RiepilogoViewModel.cs" />
+    <Compile Include="Models\CartViewModel.cs" />
     <Compile Include="Models\RoleEditViewModel.cs" />
     <Compile Include="Models\RolesIndexviewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -296,11 +297,11 @@
     <Content Include="Views\Home\AddIngredient.cshtml" />
     <Content Include="Views\Home\EditIngredient.cshtml" />
     <Content Include="Views\Home\EditProduct.cshtml" />
-    <Content Include="Views\Home\Riepilogo.cshtml" />
     <Content Include="Views\Home\DetailsProduct.cshtml" />
     <Content Include="Views\Home\AddProduct.cshtml" />
     <Content Include="Views\Roles\Index.cshtml" />
     <Content Include="Views\Roles\Edit.cshtml" />
+    <Content Include="Views\Carrello\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

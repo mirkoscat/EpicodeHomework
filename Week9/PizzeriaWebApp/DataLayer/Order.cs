@@ -24,9 +24,8 @@ namespace PizzeriaWebApp.DataLayer
 		public bool Evaso { get; set; } = false;
 		[Required]
 		public DateTime OrderDate { get; set; }
-
-		// Relazione one-to-many con Carrello
-		public List<ProductInCart> ListProdottiInCarrello { get; set; } = new List<ProductInCart>();
+		///<summary>lista prodottinelcarrello in ordini</summary>
+		public List<ProductInCart> ProdottiInCarrello { get; set; } = new List<ProductInCart>();
 
 
 

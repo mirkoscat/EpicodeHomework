@@ -79,25 +79,6 @@ namespace PizzeriaWebApp.Controllers
 			return RedirectToAction(nameof(Gestione));
 			}
 
-			//[Authorize]
-			//public ActionResult Riepilogo() {
-
-			//	//var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
-			//	var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
-			//	var product=_dbcontext.Products.FirstOrDefault(x => x.Id == cart.Id);
-
-			//	var model = new ProductInCart { 
-			//	Product = product,
-			//	Cart = cart,
-			//	};
-			//	//var model = new RiepilogoViewModel
-			//	//{
-			//	//	ListProdotti = products,
-
-			//	//	Cart = cart
-			//	//};
-			//	return View(model);
-	//	}
 		[Authorize (Roles = "admin")]
 		public ActionResult EditProduct(int id)
 		{
@@ -174,7 +155,7 @@ namespace PizzeriaWebApp.Controllers
 			var quantity = int.Parse(form["qty"]);
 			var id= long.Parse(form["id"]);
 			
-			var product = _dbcontext.Products.Single(x => x.Id == id);
+			var product = _dbcontext.Products.FirstOrDefault(x => x.Id == id);
 			var productInCart = _dbcontext.ProductsInCart.FirstOrDefault(x => x.Id == id);
 
 			if (productInCart == null)
@@ -188,12 +169,13 @@ namespace PizzeriaWebApp.Controllers
 			}
 			else
 			{
-				productInCart.Quantity++;
+				productInCart.Quantity+=quantity;
 			}
 			_dbcontext.SaveChanges();
 			return RedirectToAction(nameof(Index));
 		}
 
+		
 
 		//INGREDIENTI CRUD
 		[Authorize(Roles = "admin")]

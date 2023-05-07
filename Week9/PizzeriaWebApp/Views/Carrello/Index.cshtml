@@ -1,0 +1,50 @@
+﻿@model PizzeriaWebApp.Models.CartViewModel
+
+@{
+
+
+    decimal totcart = 0;
+
+
+}
+
+<div class="container">
+    <table class="table table-hover">
+        <tr>
+            <th>Nome Prodotto</th>
+            <th>Quantità</th>
+            <th>Prezzo</th>
+            <th>SubTotale</th>
+        </tr>
+        @foreach (var i in Model.ListProdottiInCarrello)
+        {
+            var quantity = i.Quantity;
+            decimal subtot = quantity * i.Product.Price;
+            totcart += subtot;
+
+
+            if (i.Quantity > 0)
+            {
+
+                <tr>
+                    <td>@i.Product.Name</td>
+                    <td>
+                        <form action="/Carrello/UpdateQuantity" method="POST">
+                            <input type="hidden" name="id" value="@i.Product.Id" id="id" />
+                            <input type="number" placeholder="@i.Quantity" value="@i.Quantity" id="qty" name="qty" />
+                            <button type="submit" class="btn btn-success">Aggiorna</button>
+                        </form>
+
+                    </td>
+                    <td>@i.Product.Price</td>
+                    <td>@subtot</td>
+                </tr>
+            }
+
+
+        }
+    </table>
+    <p>Prezzo Totale: @totcart</p>
+    <form action="/Carrello/CheckOut" method="POST">
+    </form>
+</div>

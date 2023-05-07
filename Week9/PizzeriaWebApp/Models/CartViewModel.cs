@@ -6,13 +6,13 @@ using PizzeriaWebApp.DataLayer;
 
 namespace PizzeriaWebApp.Models
 {
-	public class RiepilogoViewModel
+	public class CartViewModel
 	{
 		//elenco di articoli scelti dall'utente
 	
 		
 		
-		public List<ProductInCart> ListProdotti { get; set; } = new List<ProductInCart>();
+		public List<ProductInCart> ListProdottiInCarrello { get; set; } = new List<ProductInCart>();
 		
 		public Cart Cart { get; set; }
 		

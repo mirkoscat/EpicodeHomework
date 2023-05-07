@@ -21,6 +21,7 @@ namespace PizzeriaWebApp.DataLayer
         [Required]
         [Range(1,100)]
 		[DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
+		
 		public decimal Price{ get; set; }
         [Required]
         [DisplayFormat(DataFormatString = "{0} min", ApplyFormatInEditMode = false)]
@@ -28,13 +29,10 @@ namespace PizzeriaWebApp.DataLayer
 		[StringLength(50)]
         ///<summary>Descrizione Prodotto</summary>
 		public string Description { get; set; }
-
-		// Relazione many-to-many con Carrello
-
+		///<summary>Lista di ingredienti in un prodotto</summary>
 		public ICollection<Ingredient> Ingredienti { get; set; } = new List<Ingredient>();
 
-		// Relazione many-to-many con Carrello
-		public ICollection<ProductInCart> ProdottiInCarrello { get; set; } =new List<ProductInCart>();
+		
 
 	}
 }

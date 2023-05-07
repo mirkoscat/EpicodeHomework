@@ -17,8 +17,8 @@ namespace PizzeriaWebApp.DataLayer
         [Required]
         [StringLength(30)]
         public string Name { get; set; }
-       
-		// Relazione many-to-many con Prodotto
+
+		///<summary>Lista di Prodotti degli Ingredienti</summary>
 		public ICollection<Product> Prodotti { get; set; } =new List<Product>();
 
 

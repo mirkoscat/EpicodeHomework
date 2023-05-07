@@ -13,7 +13,7 @@ namespace PizzeriaWebApp.DataLayer
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int Id { get; set; }
 		[Required]
-		// Relazione many-to-many con Prodotto
+		///<summary>Lista di prodottinelcarrello in un carrello</summary>
 		public ICollection<ProductInCart> ListaProdotti { get; set; }= new List<ProductInCart>();
 
 		public string Username { get; set; }
