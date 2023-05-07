@@ -252,3 +252,4 @@ D:\SVILUPPO .NET\EpicodeHomework\Week9\PizzeriaWebApp\obj\Debug\PizzeriaWebApp.d
 D:\SVILUPPO .NET\EpicodeHomework\Week9\PizzeriaWebApp\obj\Debug\PizzeriaWebApp.pdb
 D:\SVILUPPO .NET\EpicodeHomework\Week9\PizzeriaWebApp\obj\Debug\PizzeriaWebApp.Migrations.m6.resources
 D:\SVILUPPO .NET\EpicodeHomework\Week9\PizzeriaWebApp\obj\Debug\PizzeriaWebApp.Migrations.m7.resources
+D:\SVILUPPO .NET\EpicodeHomework\Week9\PizzeriaWebApp\obj\Debug\PizzeriaWebApp.Migrations.migr.resources

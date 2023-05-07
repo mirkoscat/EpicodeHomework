@@ -26,7 +26,7 @@ namespace PizzeriaWebApp.Controllers
 		[Authorize]
 		public ActionResult Index()
 		{
-			var products = _dbcontext.Products.ToList();
+			var products = _dbcontext.Products.Include(x=>x.Ingredienti).ToList();
 		
 		
 			return View(products);
