@@ -38,12 +38,30 @@ textarea {
 }
 .prod-img {
     height:200px;
-width:200px;
+    width:300px;
 }
-.bordo {
-    background-color:antiquewhite;
-    border: 2px solid blue;
-}
+
 body  {
     background-color:antiquewhite;
+}
+.box {width:350px;
+    background-color:#e0d2d2;
+    border: 1px solid grey;
+    border-radius:10px;
+    box-shadow: 2px 2px 2px grey;
+    padding: 10px;
+    margin: 10px;
+}
+.table {
+    border: #e0d2d2;
+}
+.colorebox {
+    background-color: #e0d2d2;
+    border-bottom: 2px grey solid;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-weight:500;
+}
+.radius {
+    border-radius: 10px;
 }
