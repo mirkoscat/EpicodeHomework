@@ -150,7 +150,7 @@ namespace PizzeriaWebApp.Controllers
 			{
 				ordine.Evaso = true;
 			}
-			else
+			else 
 			{
 				ordine.Evaso = false;
 			}		

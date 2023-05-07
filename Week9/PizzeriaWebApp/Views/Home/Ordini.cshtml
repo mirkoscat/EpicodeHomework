@@ -16,7 +16,7 @@
             @Html.DisplayNameFor(model => model.AdditionalNote)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Evaso)
+            Scrivi "Evaso" e premi invio
         </th>
         <th>
             @Html.DisplayNameFor(model => model.OrderDate)
@@ -38,9 +38,10 @@
                 <td>
                     <form action="/Home/UpdateStatus" method="POST">
                         <input type="hidden" name="id" value="@item.Id" />
-                     
+
                         <input type="text" name="status" />
-                        <button type="submit" class="btn btn-success">Aggiorna</button>
+                        <button type="submit" class="btn btn-success">Invio</button>
+                       
                     </form>
                 </td>
                 <td>

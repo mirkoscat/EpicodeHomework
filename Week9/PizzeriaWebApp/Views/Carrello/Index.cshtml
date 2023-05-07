@@ -23,7 +23,7 @@
             totcart += subtot;
 
 
-            if (i.Quantity > 0)
+            if (i.Quantity > 0 )
             {
 
                 <tr>
@@ -34,13 +34,11 @@
                             <input type="number" placeholder="@i.Quantity" value="@i.Quantity" id="qty" name="qty" min="0" />
                             <button type="submit" class="btn btn-success">Aggiorna</button>
                         </form>
-
                     </td>
                     <td>@i.Product.Price</td>
                     <td>@subtot</td>
                 </tr>
             }
-
 
         }
     </table>
@@ -49,6 +47,6 @@
       
         <input required placeholder="Indirizzo:"  name="indirizzo" id="indirizzo"/>
         <input placeholder="Note:" name="note" id="note"/>
-        <button type="submit" class="btn btn-success">Checkout</button>
+        <button type="submit" class="btn btn-success" >Checkout</button>
     </form>
 </div>
