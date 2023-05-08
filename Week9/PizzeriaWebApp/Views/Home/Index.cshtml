@@ -28,7 +28,7 @@
                         <h5 class="pt-3 text-danger">@product.Name</h5>
                         <p>@product.Price €</p>
                         <p>@product.Description</p>
-                        @*<table class="table ">
+                        <table class="table ">
                             <tr><th class="text-success ">Ingredienti:</th></tr>
 
                             @foreach (var i in product.Ingredienti)
@@ -39,7 +39,7 @@
 
                             }
 
-                        </table>*@
+                        </table>
 
                         <form action="/Carrello/AddToCart" method="POST">
                             <input name="qty" type="number" id="qty" min="1" />

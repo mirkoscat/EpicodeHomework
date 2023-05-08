@@ -20,6 +20,7 @@ namespace PizzeriaWebApp.DataLayer
 
 		///<summary>Lista di Prodotti degli Ingredienti</summary>
 		public ICollection<Product> Prodotti { get; set; } =new List<Product>();
+        public bool IsChecked { get; set; } = false;
 
 
 

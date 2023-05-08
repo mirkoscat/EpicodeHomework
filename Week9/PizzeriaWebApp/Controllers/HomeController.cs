@@ -16,19 +16,19 @@ namespace PizzeriaWebApp.Controllers
 	public class HomeController : Controller
 	{
 		private PizzeriaDbContext _dbcontext;
-		
+
 		public HomeController()
 		{
 			_dbcontext = new PizzeriaDbContext();
-		
+
 		}
 
 		[Authorize]
 		public ActionResult Index()
 		{
-			var products = _dbcontext.Products.Include(x=>x.Ingredienti).ToList();
-		
-		
+			var products = _dbcontext.Products.Include("Ingredienti").ToList();
+
+
 			return View(products);
 		}
 		[Authorize(Roles = "admin")]
@@ -45,15 +45,13 @@ namespace PizzeriaWebApp.Controllers
 			};
 			return View(model);
 		}
-	
+
 		[Authorize(Roles = "admin")]
 		public ActionResult AddProduct()
 		{
-			var model = new AddProductModel
-			{
-				Ingredients = _dbcontext.Ingredients.ToList(),
-				Product = new Product()
-			};
+			var model= new AddProductModel();
+			model.Ingredients = _dbcontext.Ingredients.ToList();
+
 
 
 			return View(model);
@@ -63,23 +61,25 @@ namespace PizzeriaWebApp.Controllers
 		[ValidateAntiForgeryToken]
 		[Authorize(Roles = "admin")]
 		public ActionResult AddProduct(AddProductModel p, FormCollection form)
-		{ 
-			var ingredientlist = new List<Ingredient>();
+		{
+			
 
 
 			foreach (var i in p.Ingredients)
 			{   //prendo i valori dal form
-				var id = int.Parse(form["ingredientId"]);
-				var ingrediente = _dbcontext.Ingredients.FirstOrDefault(x => x.Id == id);
-				ingredientlist.Add(ingrediente);
+				if (i.IsChecked)
+				{
+						var ingrediente=_dbcontext.Ingredients.Single(x => x.Id == i.Id);
+						p.Product.Ingredienti.Add(ingrediente);
+				}
 			}
-			p.Product.Ingredienti = ingredientlist;
+			
 			_dbcontext.Products.Add(p.Product);
 			_dbcontext.SaveChanges();
 			return RedirectToAction(nameof(Gestione));
-			}
+		}
 
-		[Authorize (Roles = "admin")]
+		[Authorize(Roles = "admin")]
 		public ActionResult EditProduct(int id)
 		{
 			var product = _dbcontext.Products.Single(x => x.Id == id);
@@ -129,7 +129,7 @@ namespace PizzeriaWebApp.Controllers
 			product.Price = p.Price;
 			product.Url = p.Url;
 			product.DeliveryTime = p.DeliveryTime;
-			product.Description= p.Description;
+			product.Description = p.Description;
 			_dbcontext.SaveChanges();
 			return RedirectToAction("Index");
 		}
@@ -143,20 +143,20 @@ namespace PizzeriaWebApp.Controllers
 		[HttpPost]
 		public ActionResult UpdateStatus(FormCollection form)
 		{
-			int id= int.Parse(form["id"]);
+			int id = int.Parse(form["id"]);
 			var status = form["status"].ToLower();
 			var ordine = _dbcontext.Orders.FirstOrDefault(x => x.Id == id);
-			if (status== "evaso")
+			if (status == "evaso")
 			{
 				ordine.Evaso = true;
 			}
-			else 
+			else
 			{
 				ordine.Evaso = false;
-			}		
-			
+			}
+
 			_dbcontext.SaveChanges();
-		
+
 			return RedirectToAction(nameof(Ordini));
 
 		}
@@ -173,11 +173,11 @@ namespace PizzeriaWebApp.Controllers
 		[Authorize(Roles = "admin")]
 		public ActionResult AddIngredient(Ingredient i)
 		{
-			
-				_dbcontext.Ingredients.Add(i);
-				_dbcontext.SaveChanges();
-				return RedirectToAction(nameof(Gestione));
-			
+
+			_dbcontext.Ingredients.Add(i);
+			_dbcontext.SaveChanges();
+			return RedirectToAction(nameof(Gestione));
+
 		}
 		[Authorize(Roles = "admin")]
 		public ActionResult EditIngredient(int id)

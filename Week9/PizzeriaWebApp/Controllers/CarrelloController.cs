@@ -93,15 +93,15 @@ namespace PizzeriaWebApp.Controllers
 		}
 
 		
-		public ActionResult Checkout(string note,string indirizzo)
-		{
+		//public ActionResult Checkout(string note,string indirizzo)
+		//{
 
-			return Json(true, JsonRequestBehavior.AllowGet);
-		}
+		//	return Json(true, JsonRequestBehavior.AllowGet);
+		//}
 		[HttpPost]
 		public ActionResult CheckOut(FormCollection form)
 		{
-			var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
+			var cart = _dbcontext.Carts.Include("ListaProdotti").FirstOrDefault(x => x.Username == User.Identity.Name);
 			var order = new Order();
 			var note = form["note"];
 			var indirizzo = form["indirizzo"];
