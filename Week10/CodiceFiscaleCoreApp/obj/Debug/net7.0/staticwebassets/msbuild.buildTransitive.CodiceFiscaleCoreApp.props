@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CodiceFiscaleCoreApp.props" />
-</Project>
