@@ -70,7 +70,7 @@ namespace PizzeriaWebApp.Controllers
 			foreach (var i in p.Ingredients)
 			{   //prendo i valori dal form
 				var id = int.Parse(form["ingredientId"]);
-				var ingrediente = _dbcontext.Ingredients.Single(x => x.Id == id);
+				var ingrediente = _dbcontext.Ingredients.FirstOrDefault(x => x.Id == id);
 				ingredientlist.Add(ingrediente);
 			}
 			p.Product.Ingredienti = ingredientlist;

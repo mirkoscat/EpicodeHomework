@@ -15,3 +15,20 @@ C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\refint\ListaComuni.dll
 C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.pdb
 C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ListaComuni.genruntimeconfig.cache
 C:\Users\icesa\Desktop\ListaComuni\obj\Debug\net7.0\ref\ListaComuni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\bin\Debug\net7.0\ListaComuni.exe
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\bin\Debug\net7.0\ListaComuni.deps.json
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\bin\Debug\net7.0\ListaComuni.runtimeconfig.json
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\bin\Debug\net7.0\ListaComuni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\bin\Debug\net7.0\ListaComuni.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\bin\Debug\net7.0\CsvHelper.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.AssemblyInfo.cs
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.csproj.CopyComplete
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\refint\ListaComuni.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ListaComuni.genruntimeconfig.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week6\giorno 11.04.23\ListaComuni\obj\Debug\net7.0\ref\ListaComuni.dll
