@@ -100,7 +100,7 @@ namespace PizzeriaWebApp.Controllers
 		}
 		[HttpPost]
 		public ActionResult CheckOut(FormCollection form)
-		{
+		{//prendo il carrello dell utente
 			var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
 			var order = new Order();
 			var note = form["note"];
