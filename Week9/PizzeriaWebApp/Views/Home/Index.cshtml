@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<PizzeriaWebApp.DataLayer.Product>
 
 
-@{ var user= Context.User.Identity.Name; 
+@{ var user = Context.User.Identity.Name;
 
     ViewBag.Title = "Home Page";
 }
@@ -21,23 +21,32 @@
             @foreach (var product in Model)
             {
                 <div class="box text-center pb-4">
-                    
-                        <img class="prod-img" src="@Url.Content(@product.Url)" alt="@product.Name">
-                   
-                        <div>
-                            <h5 class="pt-3 text-danger">@product.Name</h5> 
-                            <p>@product.Price €</p>
-                            <table class="table ">
-                                <tr><th class="text-success ">Ingredienti:</th></tr>
-                                <tr><td class="table-warning radius">@product.Description</td></tr>
-                            </table>
-                           
-                            <form action="/Carrello/AddToCart" method="POST">
-                                <input name="qty" type="number" id="qty" min="1" />
-                                <input type="hidden" value="@product.Id" name="id" id="id" />
-                                <button type="submit" class="btn btn-success">Aggiungi</button>
-                            </form>
-                        </div>
+
+                    <img class="prod-img" src="@Url.Content(@product.Url)" alt="@product.Name">
+
+                    <div>
+                        <h5 class="pt-3 text-danger">@product.Name</h5>
+                        <p>@product.Price €</p>
+                        <p>@product.Description</p>
+                        @*<table class="table ">
+                            <tr><th class="text-success ">Ingredienti:</th></tr>
+
+                            @foreach (var i in product.Ingredienti)
+                            {
+                                <tr>
+                                    <td class="table-success radius">@i.Name</td>
+                                </tr>
+
+                            }
+
+                        </table>*@
+
+                        <form action="/Carrello/AddToCart" method="POST">
+                            <input name="qty" type="number" id="qty" min="1" />
+                            <input type="hidden" value="@product.Id" name="id" id="id" />
+                            <button type="submit" class="btn btn-success">Aggiungi</button>
+                        </form>
+                    </div>
                 </div>
             }
         </div>

@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\icesa\\Desktop\\ListaComuni\\ListaComuni.csproj",
+      "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week6\\giorno 11.04.23\\ListaComuni\\ListaComuni.csproj",
       "projectName": "ListaComuni",
-      "projectPath": "C:\\Users\\icesa\\Desktop\\ListaComuni\\ListaComuni.csproj",
+      "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week6\\giorno 11.04.23\\ListaComuni\\ListaComuni.csproj",
       "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\icesa\\Desktop\\ListaComuni\\obj\\",
+      "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week6\\giorno 11.04.23\\ListaComuni\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",

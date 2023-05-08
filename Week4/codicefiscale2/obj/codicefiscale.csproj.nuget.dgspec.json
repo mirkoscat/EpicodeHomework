@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SVILUPPO .NET\\codicefiscale2\\codicefiscale.csproj": {}
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week4\\codicefiscale2\\codicefiscale.csproj": {}
   },
   "projects": {
-    "D:\\SVILUPPO .NET\\codicefiscale2\\codicefiscale.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week4\\codicefiscale2\\codicefiscale.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SVILUPPO .NET\\codicefiscale2\\codicefiscale.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week4\\codicefiscale2\\codicefiscale.csproj",
         "projectName": "codicefiscale",
-        "projectPath": "D:\\SVILUPPO .NET\\codicefiscale2\\codicefiscale.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week4\\codicefiscale2\\codicefiscale.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "D:\\SVILUPPO .NET\\codicefiscale2\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week4\\codicefiscale2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

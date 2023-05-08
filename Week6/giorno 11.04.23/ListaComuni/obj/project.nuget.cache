@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EMJE6MKmGCPJ2gNmOhec8sRBY4ezm+L8u2dNMcAWLyvRMN3fOgeSVeS3fQ1OL97yi4VFrDNQDnz8iXR0cbQ3Tg==",
+  "dgSpecHash": "UqlTPMbYxF6FJb/oyd8eng+43KLpm8A/oIxHiJK5QLnn388BfLbMYgce+lXgAeotos2naEe/e8ySyqcVVKB2JA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\ListaComuni\\ListaComuni.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week6\\giorno 11.04.23\\ListaComuni\\ListaComuni.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
   ],
