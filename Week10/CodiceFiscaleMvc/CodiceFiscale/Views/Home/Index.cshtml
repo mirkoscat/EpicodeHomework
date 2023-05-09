@@ -1,15 +1,27 @@
-﻿@model string
-<form>
+﻿@using DataLayer
 
-    <div class="container-fluid d-flex flex-column justify-content-center" style="width:50% ">
+@model string
+
+@{
+    //ComuniContext _comuni = new ComuniContext();
+    //var comuni = _comuni.Comunis.ToList();
+
+}
+
+
+    <div class="container-fluid d-flex ml0 flex-column justify-content-center" style="width:50% ">
 
         <div class="carta">
-            <div class="codfisc"><strong>GLSNDR03S14C351L</strong></div>
+            <div class="codfisc"><strong>@Model</strong></div>
             <input class="text-form name" >
             <br />
             <input class="text-form lastname">
             <br />
             <select class="text-form citta" >
+              @*  @foreach(var comune in comuni)
+				{
+					<option>@comune.Codice</option>
+				}*@
                 <option default> Koala</option>
             </select>
             <select class="text-form gender">
@@ -27,6 +39,7 @@
         <button class="btn btn-lg btn-success text-center" style="margin-left:auto; margin-right:auto">Calcola</button>
 
     </div>
-</form>
+
+
 
 

@@ -17,19 +17,19 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        PersonaDataViewModel x = new();
-        x.FirstName = "Andrea";
-        x.LastName = "Gulisano";
-        x.Birthday = DateTime.Parse("2003-11-14");
-        x.Istat = "Catania";
-        x.Gender = 'M';
-
-       
         CF calcolo = new();
-       
-        return View("Index", calcolo.CalcolaCodiceFiscale(x));
-    }
+        PersonaDataViewModel x = new();
+        x.FirstName = "Mirko";
+        x.LastName = "Scata";
+        x.Birthday = DateTime.Parse("1992-05-15");
+        x.Istat = "Acireale";
+        x.Gender = 'M';
+        x.CodiceFiscale = calcolo.CalcolaCodiceFiscale(x);
 
+
+        return View("Index",x.CodiceFiscale );
+    }
+  
     public IActionResult Privacy()
     {
         return View();
