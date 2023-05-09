@@ -18,7 +18,7 @@ public partial class ComuniContext : DbContext
     public virtual DbSet<Comuni> Comunis { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=password;Database=comuni");
+        => optionsBuilder.UseSqlServer("Data Source=localhost\\sqlexpress;Initial Catalog=ComuniItalianiApp;Integrated Security=True;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
