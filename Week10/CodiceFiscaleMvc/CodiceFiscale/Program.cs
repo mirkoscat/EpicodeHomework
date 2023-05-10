@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using CodiceFiscale.Data;
+using DataLayer;
+using BusinessLogic;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+var myConnString=builder.Configuration.GetConnectionString("DbConnection") ?? throw new InvalidOperationException("Connection string 'DbConnection' not found.");
+builder.Services.AddDbContext<ComuniContext>(options => options.UseSqlServer(myConnString));
+builder.Services.AddScoped<ICalcoloCodiceFiscale, CF>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

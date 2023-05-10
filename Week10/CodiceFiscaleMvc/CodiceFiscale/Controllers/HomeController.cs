@@ -8,26 +8,33 @@ namespace CodiceFiscale.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+   
+    private readonly ComuniContext _context;
+    private readonly ICalcoloCodiceFiscale _calcolo;
+    
 
-    public HomeController(ILogger<HomeController> logger)
+
+    public HomeController( ComuniContext context,ICalcoloCodiceFiscale calcoloCodice)
     {
-        _logger = logger;
+       
+        _context = context;
+        _calcolo = calcoloCodice;
     }
 
     public IActionResult Index()
     {
-        CF calcolo = new();
-        PersonaDataViewModel x = new();
+
+       
+        PersonaData x = new ();
         x.FirstName = "Mirko";
         x.LastName = "Scata";
         x.Birthday = DateTime.Parse("1992-05-15");
         x.Istat = "Acireale";
         x.Gender = 'M';
-        x.CodiceFiscale = calcolo.CalcolaCodiceFiscale(x);
+        x.CodiceFiscale = _calcolo.CalcolaCodiceFiscale(x);
 
 
-        return View("Index",x.CodiceFiscale );
+        return View("Index",x );
     }
   
     public IActionResult Privacy()

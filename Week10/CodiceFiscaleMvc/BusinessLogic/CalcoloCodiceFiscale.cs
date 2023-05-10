@@ -1,7 +1,7 @@
 ﻿using DataLayer;
 namespace BusinessLogic;
 
-public class CF
+public class CF:ICalcoloCodiceFiscale
 {
     private Dictionary<char, int> tabellaConversione;
 
@@ -14,7 +14,7 @@ public class CF
     }
 
 
-    private string CalcolaNome(PersonaDataViewModel model)
+    private string CalcolaNome(PersonaData model)
     {
 
         // Prendo il nome dal modello e lo trasformo in maiuscolo
@@ -55,7 +55,7 @@ public class CF
         return consonanti;
     }
 
-    private string CalcolaCognome(PersonaDataViewModel model)
+    private string CalcolaCognome(PersonaData model)
     {
         // Prendo il cognome dal modello e lo trasformo in maiuscolo
         string cognome = model.LastName.ToUpper();
@@ -102,7 +102,7 @@ public class CF
 
         return consonanti;
     }
-    private ValoriNascita CalcolaValoriNascita(PersonaDataViewModel model)
+    private ValoriNascita CalcolaValoriNascita(PersonaData model)
     {
         DateTime giornonascita = model.Birthday;
 
@@ -222,7 +222,7 @@ public class CF
     }
 
 
-    public string CalcolaCodiceFiscale(PersonaDataViewModel model)
+    public string CalcolaCodiceFiscale(PersonaData model)
     {
         ComuniContext context = new();
         string nome = CalcolaNome(model);
@@ -230,7 +230,7 @@ public class CF
         string giornoNascita = CalcolaValoriNascita(model).Giorno.Substring(0, 2);
         string meseNascita = CalcolaValoriNascita(model).MeseNascita.ToString();
         string annoNascita = CalcolaValoriNascita(model).Anno;
-        string comune = context.Comunis.FirstOrDefault(x => x.Comune.ToLower() == model.Istat.ToLower()).Codice;
+        string comune = context.Comunis.FirstOrDefault(x => x.Denominazione== model.Istat.ToLower()).Catastale;
         string codiceFisc = cognome + nome + annoNascita + meseNascita + giornoNascita + comune;
         string carattereControllo = CalcolaCarattereControllo(codiceFisc).ToString();
         string codicefiscale = codiceFisc + carattereControllo;

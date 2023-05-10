@@ -2,8 +2,9 @@
 using System.Xml.Linq;
 
 namespace DataLayer;
-public class PersonaDataViewModel
+public class PersonaData
 {
+    public int Id { get; set; }
 
     [Display(Name = "Nome")]
     [Required]

@@ -16,9 +16,12 @@ public partial class ComuniContext : DbContext
     }
 
     public virtual DbSet<Comuni> Comunis { get; set; }
+    public virtual DbSet<PersonaData> Personas { get; set; }
 
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseSqlServer("Data Source=localhost\\sqlexpress;Initial Catalog=ComuniItalianiApp;Integrated Security=True;TrustServerCertificate=true");
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Data Source=localhost\\sqlexpress;Initial Catalog=ComuniItalianiApp;Integrated Security=True;TrustServerCertificate=true");
+       => optionsBuilder.UseSqlServer("Data Source=localhost\\sqlexpress;Initial Catalog=ComuniItaliani;Integrated Security=True;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
