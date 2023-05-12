@@ -72,7 +72,7 @@ namespace PizzeriaWebApp.Controllers
 				productInCart.Quantity += quantity;
 			}
 			_dbcontext.SaveChanges();
-			return RedirectToAction(nameof(HomeController.Index));
+			return RedirectToAction("Index","Home");
 		}
 		
 		public ActionResult UpdateQuantity(long id, int qty)
