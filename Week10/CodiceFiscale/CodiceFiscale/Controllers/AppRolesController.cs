@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CodiceFiscale.Controllers {
 
-	//[Authorize (Roles = "SuperAdmin")]
+	[Authorize (Roles = "SuperAdmin")]
 	public class AppRolesController : Controller
     {
 		private readonly RoleManager<IdentityRole> _roleManager;

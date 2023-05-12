@@ -18,13 +18,13 @@ public class PersonaDataViewModel
     public string LastName { get; set; }
     [Display(Name = "Data di Nascita: ")]
     [DataType(DataType.Date)]
-
+    [Required]
     public DateTime Birthday { get; set; }
     [Display(Name = "Comune di: ")]
-
+    [Required]
     public string Istat { get; set; }
     [Display(Name = "Genere")]
-
+    [Required]
     public char Gender { get; set; }
 
     public string? CodiceFiscale { get; set; }

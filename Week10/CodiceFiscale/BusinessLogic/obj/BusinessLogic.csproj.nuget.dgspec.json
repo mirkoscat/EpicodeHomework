@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj": {}
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj": {}
   },
   "projects": {
-    "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj"
+              "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj": {
+    "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj",
+        "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-        "outputPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\obj\\",
+        "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",

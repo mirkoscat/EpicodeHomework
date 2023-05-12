@@ -99,19 +99,23 @@ body {
         height: 280px;
         margin-left: auto;
         margin-right: auto;
-        border: 1px solid black;
+        border: 2px solid black;
+        border-radius:10px;
     }
 
     .label {
         margin-top: 10px;
         margin-left: 10px;
+        font-weight:bold;
     }
 
     .fisc {
         height: 40px;
         margin-top: 0px;
         margin-left: 0px;
-        border: 1px solid black;
+        border-bottom: 1px solid black;
+        border-top-left-radius:8px;
+        border-top-right-radius:8px;
         background-color: #09981e;
     }
 
@@ -150,7 +154,9 @@ body {
         width: 100px;
     }
 
-    .bottone {
+    input,select {
+        border:1px solid black;
+        border-radius: 8px;
     }
 }
 

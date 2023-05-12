@@ -9,97 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CodiceFiscale
 build_property.RootNamespace = CodiceFiscale
-build_property.ProjectDir = D:\SVILUPPO .NET\REPOS\CodiceFiscaleMvc\CodiceFiscaleMvc\CodiceFiscale\
+build_property.ProjectDir = D:\SVILUPPO .NET\EpicodeHomework\Week10\CodiceFiscale\CodiceFiscale\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\SVILUPPO .NET\REPOS\CodiceFiscaleMvc\CodiceFiscaleMvc\CodiceFiscale
+build_property.MSBuildProjectDirectory = D:\SVILUPPO .NET\EpicodeHomework\Week10\CodiceFiscale\CodiceFiscale
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/AppRoles/Create.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/AppRoles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/AppRoles/Index.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/AppRoles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/CF/Index.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/CF/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0ZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Comunis/Create.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Comunis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tdW5pc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Comunis/Delete.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Comunis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tdW5pc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Comunis/Details.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Comunis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tdW5pc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Comunis/Edit.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Comunis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tdW5pc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Comunis/Index.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Comunis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tdW5pc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Shared/_LoginPartial.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/User/EditUser.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/User/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/User/Index.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/_ViewImports.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/_ViewStart.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SVILUPPO .NET/REPOS/CodiceFiscaleMvc/CodiceFiscaleMvc/CodiceFiscale/Views/Shared/_Layout.cshtml]
+[D:/SVILUPPO .NET/EpicodeHomework/Week10/CodiceFiscale/CodiceFiscale/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f077eh5pnh

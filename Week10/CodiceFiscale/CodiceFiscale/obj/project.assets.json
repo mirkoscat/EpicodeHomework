@@ -11797,11 +11797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\CodiceFiscale\\CodiceFiscale.csproj",
+      "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\CodiceFiscale\\CodiceFiscale.csproj",
       "projectName": "CodiceFiscale",
-      "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\CodiceFiscale\\CodiceFiscale.csproj",
+      "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\CodiceFiscale\\CodiceFiscale.csproj",
       "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-      "outputPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\CodiceFiscale\\obj\\",
+      "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\CodiceFiscale\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11818,11 +11818,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj"
+            "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj"
             },
-            "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj"
+            "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj"
             }
           }
         }
@@ -11896,13 +11896,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Si è verificato un problema durante la lettura del file di cache D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\CodiceFiscale\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

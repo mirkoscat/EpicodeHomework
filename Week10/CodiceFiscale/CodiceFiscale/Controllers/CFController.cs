@@ -23,9 +23,8 @@ public class CFController : Controller
 
     public async Task<IActionResult> Index()
     {
-        //convertire ad asincrono
-        PersonaDataViewModel x = new();
-        x.CodiceFiscale = "";
+   
+        var x = new PersonaDataViewModel() { CodiceFiscale=""};
    
         return View("Index",x);
 
@@ -36,13 +35,16 @@ public class CFController : Controller
     {
         try
         {
-            //convertire ad asincrono
+            
             x.Istat = _comuni.Comunis.FirstOrDefault(y => y.Comune == x.Istat).Code;
             x.CodiceFiscale = _calcolo.CalcolaCodiceFiscale(x);
         }catch(Exception e) { return RedirectToAction("Index"); }
 
         return View("Index", x);
     }
+
+
+
     public async Task<IActionResult> CodiceFiscale(PersonaDataViewModel x)
     {
         try
@@ -75,12 +77,7 @@ public class CFController : Controller
     }
 
 
-    public async Task<IActionResult> GetProvince()
-    {
-
-        return  Ok(await _comuni.Comunis.Distinct().ToListAsync());
-    }
-
+    
 
 
 }

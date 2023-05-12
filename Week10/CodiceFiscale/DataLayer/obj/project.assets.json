@@ -1375,11 +1375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\DataLayer.csproj",
+      "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\DataLayer.csproj",
       "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-      "outputPath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\obj\\",
+      "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1456,13 +1456,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Si è verificato un problema durante la lettura del file di cache D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\DataLayer\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

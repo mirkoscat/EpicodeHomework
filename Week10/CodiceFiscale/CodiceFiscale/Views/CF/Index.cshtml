@@ -8,7 +8,7 @@
 }
 
 
-<form method="post">
+<form asp-action="Index" asp-controller="CF">
 	<div class="d-flex justify-content-center">
 		<div class=" d-flex flex-column bottone">
 		
@@ -29,10 +29,10 @@
 				<label class="hidden label">Cognome:</label>
 				<input asp-for="@Model.LastName" class="text-form surname">
 				
-
 				<br />
 				<label class="hidden label">Nome:</label>
 				<input asp-for="@Model.FirstName"  class="text-form name">
+				<span asp-validation-for="@Model.FirstName" class="text-danger"></span>
 				
 				<br />
 				<label class="hidden label">Comuni:</label>
@@ -61,6 +61,12 @@
 
 			</div>
 			<br />
+			@*<div asp-validation-summary="All" class="text-danger"></div>
+			
+			<span asp-validation-for="@Model.LastName" class="text-danger"></span>
+			<span asp-validation-for="@Model.Birthday" class="text-danger"></span>
+			<span asp-validation-for="@Model.Gender" class="text-danger"></span>
+			<span asp-validation-for="@Model.Istat" class="text-danger"></span>*@
 			<button class="btn btn-lg btn-success text-center bottone">Calcola</button>
 		</div>
 	</div>

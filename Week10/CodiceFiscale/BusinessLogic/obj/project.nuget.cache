@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O/qYs7+ww4nwbd5B5pflUeKCrK1BLZ8DB4tZkmBihH1S0hn2hzmvSjqYPkIon+HrviFbq7FFZqAbVL4cMRiOhg==",
+  "dgSpecHash": "BdqBMT2LlocnBzwtkXC+cLIPo6gZGCtV2RfNjVpu3v0D84tqEF1WkmUdGhDPyEzxMIxXrDe+TsnlkzWaYxJqlg==",
   "success": true,
-  "projectFilePath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
@@ -29,12 +29,5 @@
     "C:\\Users\\icesa\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Si è verificato un problema durante la lettura del file di cache D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\BusinessLogic\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

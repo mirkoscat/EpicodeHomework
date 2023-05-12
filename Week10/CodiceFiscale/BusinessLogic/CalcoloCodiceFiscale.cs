@@ -3,9 +3,7 @@ namespace BusinessLogic;
 
 public class CF : ICodiceFiscale
 {
-    private Dictionary<char, int> tabellaConversione;
-
-
+    
     public class ValoriNascita
     {
         public string Giorno { get; set; }
@@ -168,7 +166,7 @@ public class CF : ICodiceFiscale
 
 
 
-    public static char CFCalcolaCIN(string cf)
+    public static char CalcolaCarattereControllo(string cf)
     {
         const string validNumber0 = "0123456789LMNPQRSTUV"; // lettere per gestire i casi di Omocodia
         const string validLetter1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -241,7 +239,7 @@ public class CF : ICodiceFiscale
         string annoNascita = CalcolaValoriNascita(model).Anno;
         string comune =   model.Istat;
         string codiceFisc = cognome + nome + annoNascita + meseNascita + giornoNascita + comune;
-        string carattereControllo = CFCalcolaCIN(codiceFisc).ToString();
+        string carattereControllo = CalcolaCarattereControllo(codiceFisc).ToString();
         string codicefiscale = codiceFisc + carattereControllo;
 
         return codicefiscale;

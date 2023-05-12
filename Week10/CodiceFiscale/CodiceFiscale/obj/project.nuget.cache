@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GzE+2EhdbIlkPLbfdpvbbma4oouC+dtck1ts6blX/WreiGLYJcyPh0oXxjSkH2ej3sv5CXIU4jnIeRf7yV7hYg==",
+  "dgSpecHash": "qd3+ZOaFf7wjIawhRbIWzCdeTAxnYU4F9O801RRpt/eileMYWbSWLfH74oMeR+BbLnWz1OmbmIM0YuDjDUeAqw==",
   "success": true,
-  "projectFilePath": "D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\CodiceFiscale\\CodiceFiscale.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week10\\CodiceFiscale\\CodiceFiscale\\CodiceFiscale.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -209,12 +209,5 @@
     "C:\\Users\\icesa\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Si è verificato un problema durante la lettura del file di cache D:\\SVILUPPO .NET\\REPOS\\CodiceFiscaleMvc\\CodiceFiscaleMvc\\CodiceFiscale\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

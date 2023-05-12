@@ -11,7 +11,7 @@ using System.Data;
 
 namespace CodiceFiscale.Controllers
 {
-	//[Authorize(Roles = "SuperAdmin")]
+	[Authorize(Roles = "SuperAdmin")]
 	public class ComunisController : Controller
     {
         private readonly ComuniContext _context;
