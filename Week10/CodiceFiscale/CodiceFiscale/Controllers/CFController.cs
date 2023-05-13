@@ -33,14 +33,15 @@ public class CFController : Controller
     [HttpPost]
     public async Task<IActionResult> Index(PersonaDataViewModel x)
     {
+        if (ModelState.IsValid) { 
         try
         {
             
             x.Istat = _comuni.Comunis.FirstOrDefault(y => y.Comune == x.Istat).Code;
             x.CodiceFiscale = _calcolo.CalcolaCodiceFiscale(x);
         }catch(Exception e) { return RedirectToAction("Index"); }
-
-        return View("Index", x);
+		}
+		return View("Index", x);
     }
 
 
@@ -55,7 +56,7 @@ public class CFController : Controller
         }
         catch (Exception e) { BadRequest(); }
 
-        return Ok(x.CodiceFiscale);
+        return Ok(x.CodiceFiscale );
     }
 
 

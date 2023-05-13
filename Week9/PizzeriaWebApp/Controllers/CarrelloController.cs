@@ -12,7 +12,7 @@ namespace PizzeriaWebApp.Controllers
 	public class CarrelloController : Controller
 	{
 		private readonly PizzeriaDbContext _dbcontext;
-		
+
 		public CarrelloController()
 		{
 			_dbcontext = new PizzeriaDbContext();
@@ -20,7 +20,7 @@ namespace PizzeriaWebApp.Controllers
 		public ActionResult Index()
 		{
 			var cart = _dbcontext.Carts.FirstOrDefault(c => c.Username == User.Identity.Name);
-			var listProdotti = _dbcontext.ProductsInCart.Include(nameof(Product)).Include(nameof(Cart)).Where(p => p.Cart.Id == cart.Id && p.Product.Id==p.Id).ToList();
+			var listProdotti = _dbcontext.ProductsInCart.Include(nameof(Product)).Include(nameof(Cart)).Where(p => p.Cart.Id == cart.Id && p.Product.Id == p.Id).ToList();
 			var model = new CartViewModel
 			{
 				ListProdottiInCarrello = listProdotti,
@@ -30,17 +30,17 @@ namespace PizzeriaWebApp.Controllers
 			return View(model);
 		}
 
-		
+
 		public ActionResult AddToCart(long id, int qty)
 		{
 
 			return Json(true, JsonRequestBehavior.AllowGet);
 		}
 		[HttpPost]
-		
-
 		public ActionResult AddToCart(FormCollection form)
+			
 		{
+			if (ModelState.IsValid) { 
 			var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
 
 			if (cart == null)
@@ -72,6 +72,7 @@ namespace PizzeriaWebApp.Controllers
 				productInCart.Quantity += quantity;
 			}
 			_dbcontext.SaveChanges();
+			}
 			return RedirectToAction("Index","Home");
 		}
 		
@@ -93,11 +94,7 @@ namespace PizzeriaWebApp.Controllers
 		}
 
 		
-		//public ActionResult Checkout(string note,string indirizzo)
-		//{
-
-		//	return Json(true, JsonRequestBehavior.AllowGet);
-		//}
+		
 		[HttpPost]
 		public ActionResult CheckOut(FormCollection form)
 		{

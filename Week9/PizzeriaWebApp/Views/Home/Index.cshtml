@@ -42,7 +42,7 @@
                         </table>
 
                         <form action="/Carrello/AddToCart" method="POST">
-                            <input name="qty" type="number" id="qty" min="1" />
+                            <input required name="qty" type="number" id="qty" min="1" />
                             <input type="hidden" value="@product.Id" name="id" id="id" />
                             <button type="submit" class="btn btn-success">Aggiungi</button>
                         </form>

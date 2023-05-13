@@ -32,7 +32,7 @@
 				<br />
 				<label class="hidden label">Nome:</label>
 				<input asp-for="@Model.FirstName"  class="text-form name">
-				<span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+			
 				
 				<br />
 				<label class="hidden label">Comuni:</label>
@@ -61,8 +61,8 @@
 
 			</div>
 			<br />
-			@*<div asp-validation-summary="All" class="text-danger"></div>
-			
+			<div asp-validation-summary="All" class="text-danger"></div>
+			@*
 			<span asp-validation-for="@Model.LastName" class="text-danger"></span>
 			<span asp-validation-for="@Model.Birthday" class="text-danger"></span>
 			<span asp-validation-for="@Model.Gender" class="text-danger"></span>
