@@ -66,8 +66,8 @@
 
                     @Html.CheckBoxFor(m => Model.Ingredients[i].IsChecked)
                     @Model.Ingredients[i].Name
-                    @Html.HiddenFor(m => Model.Ingredients[i].Id)
-                    @Html.HiddenFor(m => Model.Ingredients[i].Name)<br />
+                    @Html.HiddenFor(m => Model.Ingredients[i].Id, htmlAttributes: new {@name="ingredientId" })
+                    @Html.HiddenFor(m => Model.Ingredients[i].Name, htmlAttributes: new { @name = "ingredientName" })<br />
 
                     }
                 </div>

@@ -9,9 +9,6 @@ namespace PizzeriaWebApp.Models
 	public class CartViewModel
 	{
 		//elenco di articoli scelti dall'utente
-	
-		
-		
 		public List<ProductInCart> ListProdottiInCarrello { get; set; } = new List<ProductInCart>();
 		
 		public Cart Cart { get; set; }

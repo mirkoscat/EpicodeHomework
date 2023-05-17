@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Http;
+using NuGet.Protocol;
 
 namespace CodiceFiscale.Controllers;
 
@@ -50,13 +51,12 @@ public class CFController : Controller
     {
         try
         {
-            //convertire ad asincrono
             x.Istat = _comuni.Comunis.FirstOrDefault(y => y.Comune == x.Istat).Code;
-            x.CodiceFiscale = _calcolo.CalcolaCodiceFiscale(x);
         }
-        catch (Exception e) { BadRequest(); }
+        catch (Exception e) { BadRequest(); }       
+        var codice= _calcolo.CalcolaCodiceFiscale(x).ToJson();
+        return Ok(codice);
 
-        return Ok(x.CodiceFiscale );
     }
 
 
