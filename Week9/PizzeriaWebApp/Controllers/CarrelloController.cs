@@ -55,7 +55,7 @@ namespace PizzeriaWebApp.Controllers
 
                 var quantity = int.Parse(form["qty"]);
                 var id = long.Parse(form["id"]);
-                //include ingredient?
+             
                 var product = _dbcontext.Products.FirstOrDefault(x => x.Id == id);
                 var productInCart = cart.ListaProdotti.FirstOrDefault(x => x.Product.Id == id);
                 var check = cart.ListaProdotti.Any(x=>x.Product.Id==id);

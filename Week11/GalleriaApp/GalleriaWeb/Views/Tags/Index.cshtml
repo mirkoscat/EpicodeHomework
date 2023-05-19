@@ -1,0 +1,13 @@
+﻿@using DataLayer
+@model IEnumerable<GalleriaWeb.Models.Entities.TagModel>
+<a asp-controller="Tags" asp-action="Create">Aggiungi tag</a>
+
+
+<p>lista tag</p>
+
+	@foreach (var tagItem in Model)
+	{
+		<p>@tagItem.Name</p>
+		@Html.ActionLink("Delete", "Delete", "Tags",new { id = tagItem.Id }, new { @class = "btn btn-danger" })
+	}
+

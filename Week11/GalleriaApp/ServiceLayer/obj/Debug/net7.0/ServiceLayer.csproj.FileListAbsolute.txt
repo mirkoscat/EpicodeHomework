@@ -1,0 +1,15 @@
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\bin\Debug\net7.0\ServiceLayer.deps.json
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\bin\Debug\net7.0\ServiceLayer.dll
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\bin\Debug\net7.0\ServiceLayer.pdb
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\bin\Debug\net7.0\DataLayer.dll
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\bin\Debug\net7.0\DataLayer.pdb
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.csproj.AssemblyReference.cache
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.AssemblyInfo.cs
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.csproj.CopyComplete
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.dll
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\refint\ServiceLayer.dll
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.pdb
+C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ref\ServiceLayer.dll
