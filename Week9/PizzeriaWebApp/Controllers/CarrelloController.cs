@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -18,9 +19,9 @@ namespace PizzeriaWebApp.Controllers
             _dbcontext = new PizzeriaDbContext();
         }
         public ActionResult Index()
-        {
-            var cart = _dbcontext.Carts.FirstOrDefault(c => c.Username == User.Identity.Name);
-            var listProdotti = _dbcontext.ProductsInCart.Include(nameof(Product)).Include(nameof(Cart)).Where(p => p.Cart.Id == cart.Id && p.Product.Id == p.Id).ToList();
+		{
+			var cart = _dbcontext.Carts.FirstOrDefault(c => c.Username == User.Identity.Name);
+          	var listProdotti = _dbcontext.ProductsInCart.Include(nameof(Product)).Include(nameof(Cart)).Where(p => p.Cart.Id == cart.Id).ToList();
             var model = new CartViewModel
             {
                 ListProdottiInCarrello = listProdotti,
@@ -42,8 +43,8 @@ namespace PizzeriaWebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var cart = _dbcontext.Carts.FirstOrDefault(x => x.Username == User.Identity.Name);
-
+                var cart = _dbcontext.Carts.Include(x=>x.ListaProdotti.Select(c=>c.Product)).FirstOrDefault(x => x.Username == User.Identity.Name);
+                
                 if (cart == null)
                 {
                     cart = new Cart();
@@ -56,9 +57,9 @@ namespace PizzeriaWebApp.Controllers
                 var id = long.Parse(form["id"]);
                 //include ingredient?
                 var product = _dbcontext.Products.FirstOrDefault(x => x.Id == id);
-                var productInCart = _dbcontext.ProductsInCart.FirstOrDefault(x => x.Id == id);
-
-                if (productInCart == null)
+                var productInCart = cart.ListaProdotti.FirstOrDefault(x => x.Product.Id == id);
+                var check = cart.ListaProdotti.Any(x=>x.Product.Id==id);
+                if (!check  )
                 {
                     var newItem = new ProductInCart
                     {
@@ -69,7 +70,7 @@ namespace PizzeriaWebApp.Controllers
                     _dbcontext.ProductsInCart.Add(newItem);
                 }
                 else
-                {
+                { 
                     productInCart.Quantity += quantity;
                 }
                 _dbcontext.SaveChanges();

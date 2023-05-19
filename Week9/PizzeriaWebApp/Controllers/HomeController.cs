@@ -31,6 +31,7 @@ namespace PizzeriaWebApp.Controllers
 
 			return View(products);
 		}
+		
 		[Authorize(Roles = "admin")]
 		public ActionResult Gestione()
 		{
