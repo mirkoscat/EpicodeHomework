@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U4PeSmgnf2qCfD+1nTp2YlxXGMH+1vbiQEtBHenTX3P2Ln25gVfhCpiihBNbKPXIyFD2SnzsZ0h434mK7xV7vQ==",
+  "dgSpecHash": "S49ygiWR0qn4mBIIetBhvtnE0YLbaYyj8yY2WWUMFlaV2yuYmAZ+6IOmLwITI8JwpIPRGjEoP+/Pt5GEk6ayQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\GalleriaApp\\GalleriaWeb\\GalleriaWeb.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week11\\GalleriaApp\\GalleriaWeb\\GalleriaWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

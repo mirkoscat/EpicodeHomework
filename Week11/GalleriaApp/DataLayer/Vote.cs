@@ -14,5 +14,6 @@ namespace DataLayer
 		[Range(0, 100)]
 		public int Value { get; set; }
 		public string? Username { get; set; }
+		public List<Image> Images { get; set; }=new List<Image>();
 	}
 }

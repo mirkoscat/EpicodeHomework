@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qMvf2VJsSnnxPJH9NEFjd3LyXHqWehz/5iLyDdL2a77NdwcKpoL6yrxlkAUhYViddvWO13WhUXjFctRiMJ8+kw==",
+  "dgSpecHash": "X0UURKJVA1kuMqk1lJLOM+YFD3i2X00KFNIUGU4dIjMpIcA+L8hENoXj0vJgC70cQ6Uf8QbTNYpt4VDNBmdMOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\GalleriaApp\\DataLayer\\DataLayer.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week11\\GalleriaApp\\DataLayer\\DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

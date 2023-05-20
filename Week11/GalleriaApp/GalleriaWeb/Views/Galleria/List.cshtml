@@ -15,11 +15,18 @@
 			<th>Tags</th>
 			<th>Espandi</th></thead>
 			@foreach (var image in Model)
-			{
+			{ 
 				<tr>
 					<td><img src="@Url.Action("GetImage", "Galleria", new { id=image.Id })" alt="@image.Title" style="width:100px;height:100px;"></td>
 					<td>@image.Title</td>
-					<td>@image.Size kb</td> 
+					<td>
+						<form asp-controller="Votes" asp-action="AssegnaVoto">
+							<input type="hidden" asp-for="@image.Id" />
+							<input required type="number" min="1" max="10" name="qty"  />
+							<button disabled type="submit"> Vota</button>
+						</form>
+						
+					</td> 
 					<td>@image.Username</td> 
 					@if (User.IsInRole("SuperAdmin"))
 					{

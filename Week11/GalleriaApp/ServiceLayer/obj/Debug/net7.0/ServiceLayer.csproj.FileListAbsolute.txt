@@ -13,3 +13,18 @@ C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.dl
 C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\refint\ServiceLayer.dll
 C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.pdb
 C:\Users\icesa\Desktop\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ref\ServiceLayer.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\bin\Debug\net7.0\ServiceLayer.deps.json
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\bin\Debug\net7.0\ServiceLayer.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\bin\Debug\net7.0\ServiceLayer.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\bin\Debug\net7.0\DataLayer.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\bin\Debug\net7.0\DataLayer.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.csproj.AssemblyReference.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.AssemblyInfoInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.AssemblyInfo.cs
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.csproj.CopyComplete
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\refint\ServiceLayer.dll
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ServiceLayer.pdb
+D:\SVILUPPO .NET\EpicodeHomework\Week11\GalleriaApp\ServiceLayer\obj\Debug\net7.0\ref\ServiceLayer.dll

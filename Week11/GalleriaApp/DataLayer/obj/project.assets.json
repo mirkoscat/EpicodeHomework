@@ -6854,11 +6854,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\icesa\\Desktop\\GalleriaApp\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week11\\GalleriaApp\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "C:\\Users\\icesa\\Desktop\\GalleriaApp\\DataLayer\\DataLayer.csproj",
+      "projectPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week11\\GalleriaApp\\DataLayer\\DataLayer.csproj",
       "packagesPath": "C:\\Users\\icesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\icesa\\Desktop\\GalleriaApp\\DataLayer\\obj\\",
+      "outputPath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week11\\GalleriaApp\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icesa\\AppData\\Roaming\\NuGet\\NuGet.Config",

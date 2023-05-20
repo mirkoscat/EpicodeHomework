@@ -50,32 +50,14 @@ namespace DataLayer.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
+                    b.Property<int?>("VoteId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("VoteId");
 
                     b.ToTable("Images");
-                });
-
-            modelBuilder.Entity("DataLayer.ImageTag", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("ImageId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TagId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ImageId");
-
-                    b.HasIndex("TagId");
-
-                    b.ToTable("ImageTags");
                 });
 
             modelBuilder.Entity("DataLayer.Tag", b =>
@@ -137,19 +119,11 @@ namespace DataLayer.Migrations
                     b.ToTable("ImageTag");
                 });
 
-            modelBuilder.Entity("DataLayer.ImageTag", b =>
+            modelBuilder.Entity("DataLayer.Image", b =>
                 {
-                    b.HasOne("DataLayer.Image", "Image")
-                        .WithMany()
-                        .HasForeignKey("ImageId");
-
-                    b.HasOne("DataLayer.Tag", "Tag")
-                        .WithMany()
-                        .HasForeignKey("TagId");
-
-                    b.Navigation("Image");
-
-                    b.Navigation("Tag");
+                    b.HasOne("DataLayer.Vote", null)
+                        .WithMany("Images")
+                        .HasForeignKey("VoteId");
                 });
 
             modelBuilder.Entity("DataLayer.Vote", b =>
@@ -174,6 +148,11 @@ namespace DataLayer.Migrations
                         .HasForeignKey("TagsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("DataLayer.Vote", b =>
+                {
+                    b.Navigation("Images");
                 });
 #pragma warning restore 612, 618
         }

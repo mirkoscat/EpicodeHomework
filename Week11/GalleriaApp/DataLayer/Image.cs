@@ -21,5 +21,7 @@ namespace DataLayer
 		[StringLength(80)]
 		public string? Username { get; set; }
 		public List<Tag> Tags { get; set;}=new List<Tag>();
+		[NotMapped]
+		public List<Vote> Votes { get; set;}=new List<Vote>();
 	}
 }
