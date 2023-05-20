@@ -16,7 +16,7 @@
             @Html.DisplayNameFor(model => model.AdditionalNote)
         </th>
         <th>
-            Scrivi "Evaso" e premi invio
+            Evaso?
         </th>
         <th>
             @Html.DisplayNameFor(model => model.OrderDate)
@@ -36,13 +36,17 @@
                     @Html.DisplayFor(modelItem => item.AdditionalNote)
                 </td>
                 <td>
-                    <form action="/Home/UpdateStatus" method="POST">
-                        <input type="hidden" name="id" value="@item.Id" />
-
-                        <input type="text" name="status" />
+                    @using (Html.BeginForm("UpdateStatus", "Home", FormMethod.Post))
+                    {
+                        @Html.Hidden("id", item.Id)
+                        <input type="checkbox" name="Evaso" value="@item.Evaso" />
                         <button type="submit" class="btn btn-success">Invio</button>
-                       
-                    </form>
+                    }
+                    @*<form action="/Home/UpdateStatus" method="POST">
+            <input type="hidden" name="id" value="@item.Id" />
+            <input type="text" name="status" />
+            <button type="submit" class="btn btn-success">Invio</button>
+        </form>*@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.OrderDate)

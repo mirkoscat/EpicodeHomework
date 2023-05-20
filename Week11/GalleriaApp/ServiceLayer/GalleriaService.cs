@@ -75,34 +75,62 @@ namespace ServiceLayer
             _dataContext.Images.Add(img);
             _dataContext.SaveChanges();
         }
-		//public IEnumerable<Image> GetImagesByTags(string[] tags)
-		//{
+        //public IEnumerable<Image> GetImagesByTags(string[] tags)
+        //{
 
-		//    var images = _dataContext.Images.Include(i => i.Tags).Where(i => i.Tags.Any(t => tags.Contains(t.Name)))
-		//        .Select(i => new Image
-		//        {
-		//            Content = i.Content,
-		//            Format = i.Format,
-		//            Id = i.Id,
-		//            Title = i.Title,
-		//            Username = i.Username
-		//        });
-		//    return images;
-		//}
+        //    var images = _dataContext.Images.Include(i => i.Tags).Where(i => i.Tags.Any(t => tags.Contains(t.Name)))
+        //        .Select(i => new Image
+        //        {
+        //            Content = i.Content,
+        //            Format = i.Format,
+        //            Id = i.Id,
+        //            Title = i.Title,
+        //            Username = i.Username
+        //        });
+        //    return images;
+        //}
 
-		//public IEnumerable<Image> GetImagesByVotes(int min, int max)
-		//{
-		//    throw new NotImplementedException();
-		//}
-		//public void LinkTag(string tag, int imageId)
-		//{
-		//    throw new NotImplementedException();
-		//}
+        //public IEnumerable<Image> GetImagesByVotes(int min, int max)
+        //{
+        //    throw new NotImplementedException();
+        //}
+        //public void LinkTag(string tag, int imageId)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-		//public void PlaceVote(Vote vote)
-		//{
-		//    throw new NotImplementedException();
-		//}
+        public void PlaceVote(int id,int voto)
+        {
+            var image = GetImageById(id);
+           
 
+			if (image != null)
+			{
+			
+			
+			}
+			else
+			{
+				throw new Exception("Immagine non trovata.");
+			}
+		}
+
+        public IEnumerable<Vote> GetVotes() => _dataContext.Votes.Select(v=> new Vote { Id=v.Id,Value=v.Value,Username=v.Username });
 	}
-}
+
+    }
+
+
+//var image = _dataContext.Images.Include(x => x.Tags).Single(i => i.Id == id);
+//var taglist = new List<Tag>();
+//foreach (var t in tags)
+//{
+//	var tag = _dataContext.Tags.Single(x => x.Id == t);
+//	taglist.Add(tag);
+
+//}
+//image.Tags.Clear();
+//_dataContext.SaveChanges();
+//image.Tags = taglist;
+
+//_dataContext.SaveChanges();

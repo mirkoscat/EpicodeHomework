@@ -145,18 +145,23 @@ namespace PizzeriaWebApp.Controllers
 		public ActionResult UpdateStatus(FormCollection form)
 		{
 			int id = int.Parse(form["id"]);
-			var status = form["status"].ToLower();
 			var ordine = _dbcontext.Orders.FirstOrDefault(x => x.Id == id);
-			if (status == "evaso")
-			{
-				ordine.Evaso = true;
-			}
-			else
-			{
-				ordine.Evaso = false;
-			}
+			ordine.Evaso = form["Evaso"] == "on";
 
 			_dbcontext.SaveChanges();
+			//int id = int.Parse(form["id"]);
+			//var status = form["status"].ToLower();
+			//var ordine = _dbcontext.Orders.FirstOrDefault(x => x.Id == id);
+			//if (status == "evaso")
+			//{
+			//	ordine.Evaso = true;
+			//}
+			//else
+			//{
+			//	ordine.Evaso = false;
+			//}
+
+			//_dbcontext.SaveChanges();
 
 			return RedirectToAction(nameof(Ordini));
 

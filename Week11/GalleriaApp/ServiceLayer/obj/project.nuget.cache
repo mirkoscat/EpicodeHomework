@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lUXznWlt8ywmvpHBGMn6NIrpvULCHggA62xuU4A6j71/lfaraZqAE2xUSyGJbYTZeFa5JhcTHJG73kbmD3sc5Q==",
+  "dgSpecHash": "uh/y/EsoMrHfxj9qmqIJE6fGr6mRnlzXqnN878f+YKtTTU5bE1SNq6nZb6HtTkz0DHZ92DOlyafBhCwkVyBwOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icesa\\Desktop\\GalleriaApp\\ServiceLayer\\ServiceLayer.csproj",
+  "projectFilePath": "D:\\SVILUPPO .NET\\EpicodeHomework\\Week11\\GalleriaApp\\ServiceLayer\\ServiceLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icesa\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\icesa\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
